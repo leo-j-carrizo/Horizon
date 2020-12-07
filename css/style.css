@@ -1,6 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @font-face {
   font-family: 'goodtime';
   src: url("../font/GOODTIME.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'slimplay';
+  src: url("../font/SlimPlay.ttf") format("truetype"); }
 
 /*estilos generales*/
 body {
@@ -9,7 +14,7 @@ body {
   margin: 0px; }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
   color: grey;
   font-family: 'goodtime'; }
 
@@ -54,7 +59,7 @@ h1 {
     font-size: 1rem;
     color: black;
     background-color: #66B933;
-    border: 3.9px solid #66B933;
+    border: 2px solid #66B933;
     font-family: 'goodtime';
     opacity: 0.5;
     transition: 0.5s; }
@@ -70,23 +75,24 @@ h1 {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center; }
   .logBx a:hover {
     color: #66B933;
     transition: 0.5s; }
 
 .cartBx {
-  width: 80px;
+  width: 50px;
   height: 100%;
+  margin-right: 30px;
   background-color: #66B933;
   display: flex;
   align-items: center;
   justify-content: center;
-  clip-path: circle(30px); }
+  clip-path: circle(22px); }
   .cartBx img {
-    width: 35px;
-    height: 35px; }
+    width: 25px;
+    height: 25px; }
 
 /*nav*/
 nav {
@@ -103,8 +109,109 @@ nav {
       padding: 10px;
       height: 100%; }
       nav ul li a {
-        height: 100%; }
-      nav ul li a:hover + li {
+        height: 100%;
+        padding: 13px; }
+      nav ul li a:hover {
         color: black;
         background-color: #66B933;
         transition: 0.5s; }
+
+/*carrusel*/
+.imgCrBstp {
+  height: 25vw; }
+
+/*contenido*/
+main {
+  display: flex;
+  justify-content: center; }
+
+.secD {
+  width: 1200px; }
+
+/*tarjeta de productos*/
+.cardBx {
+  display: flex;
+  justify-content: space-between; }
+
+.card {
+  position: relative;
+  width: 320px;
+  height: 420px;
+  background-color: #1C1C21;
+  border-radius: 20px;
+  overflow: hidden; }
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  width: 100%;
+  height: 100%;
+  background-color: #66B933;
+  transform: skewY(345deg);
+  transition: 0.5s; }
+
+.card:hover::before {
+  top: -70%;
+  transform: skewY(390deg); }
+
+.card::after {
+  content: 'PS5';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  font-size: 5rem;
+  font-weight: 600;
+  font-family: 'slimplay';
+  color: rgba(0, 0, 0, 0.1); }
+
+.card_imgBx {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  z-index: 1; }
+  .card_imgBx img {
+    width: 120px;
+    transition: 0.5s; }
+
+.card:hover .card_imgBx img {
+  width: 100px; }
+
+.card_description {
+  font-family: 'poppins'; }
+
+.card_description {
+  position: relative;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1; }
+  .card_description h3 {
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px; }
+  .card_description .price {
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 1px; }
+  .card_description a {
+    position: relative;
+    top: 200px;
+    opacity: 0;
+    color: black;
+    padding: 10px 30px;
+    margin-top: 15px;
+    background-color: #66B933;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: 0.5s; }
+
+.card:hover .card_description a {
+  top: 0px;
+  opacity: 100; }

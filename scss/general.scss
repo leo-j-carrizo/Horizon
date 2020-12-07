@@ -7,6 +7,10 @@ $font-color: white;
 @font-face {
     font-family: 'goodtime';
     src: url('../font/GOODTIME.ttf')  format('truetype');
+}
+@font-face {
+    font-family: 'slimplay';
+    src: url('../font/SlimPlay.ttf')  format('truetype');
   }
 
 /*estilos generales*/
@@ -16,7 +20,8 @@ body{
     margin: 0px;
 }
 a{
-    text-decoration: none;
+    text-decoration: none !important; 
     color: $tertiary-color;
     font-family: 'goodtime';
+    
 }
