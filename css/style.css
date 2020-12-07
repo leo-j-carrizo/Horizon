@@ -1,3 +1,95 @@
+@font-face {
+  font-family: 'goodtime';
+  src: url("../font/GOODTIME.ttf") format("truetype"); }
+
 /*estilos generales*/
 body {
-  background-color: black; }
+  background-color: black;
+  color: white;
+  margin: 0px; }
+
+a {
+  text-decoration: none;
+  color: grey;
+  font-family: 'goodtime'; }
+
+/*header*/
+header {
+  display: flex;
+  height: 10vh;
+  width: 100vw; }
+
+.titleBx {
+  background-color: #66B933;
+  display: flex;
+  width: 250px;
+  height: 100%;
+  align-items: center;
+  justify-content: center; }
+
+h1 {
+  font-family: 'goodtime';
+  color: black;
+  text-align: center;
+  font-size: 2rem; }
+
+.searchBx {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  height: 100%;
+  padding-left: 10px; }
+  .searchBx input {
+    width: 70%;
+    border: 2px solid grey;
+    background-color: transparent;
+    color: white;
+    font-size: 1rem;
+    padding: 5px;
+    border-right: 0px;
+    transition: 0.5s; }
+  .searchBx button {
+    padding: 5px;
+    font-size: 1rem;
+    color: black;
+    background-color: #66B933;
+    border: 3.9px solid #66B933;
+    font-family: 'goodtime';
+    opacity: 0.5;
+    transition: 0.5s; }
+  .searchBx input:focus {
+    border: 2px solid #66B933;
+    border-right: 0px; }
+  .searchBx input:focus + button {
+    opacity: 100; }
+
+.logBx {
+  font-size: 1rem;
+  width: 180px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center; }
+  .logBx a:hover {
+    color: #66B933;
+    transition: 0.5s; }
+
+.cartBx {
+  width: 80px;
+  height: 100%;
+  background-color: #66B933;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  clip-path: circle(30px); }
+  .cartBx img {
+    width: 35px;
+    height: 35px; }
+
+/*nav*/
+nav {
+  width: 100%;
+  background-color: grey;
+  height: 50px; }

@@ -1,8 +1,21 @@
 $primary-color:black;
-$secondary-color:#24b04f;
-$tertiary-color:#1C1C21;
+$secondary-color:#66B933;
+$tertiary-color:grey;
+$font-color: white;
+
+@font-face {
+    font-family: 'goodtime';
+    src: url('../font/GOODTIME.ttf')  format('truetype');
+  }
 
 /*estilos generales*/
 body{
     background-color: $primary-color;
+    color: $font-color;
+    margin: 0px;
+}
+a{
+    text-decoration: none;
+    color: $tertiary-color;
+    font-family: 'goodtime';
 }
