@@ -20,6 +20,7 @@ body{
     background-color: $primary-color;
     color: $font-color;
     margin: 0px;
+    overflow-x: hidden;
 }
 a{
     text-decoration: none !important; 

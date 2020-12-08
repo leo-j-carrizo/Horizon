@@ -11,7 +11,8 @@
 body {
   background-color: black;
   color: white;
-  margin: 0px; }
+  margin: 0px;
+  overflow-x: hidden; }
 
 a {
   text-decoration: none !important;
@@ -29,7 +30,7 @@ main {
   justify-content: center; }
 
 .secD {
-  width: 1200px; }
+  width: 1500px; }
 
 header {
   display: flex;
@@ -214,3 +215,20 @@ nav {
 .card:hover .card_description a {
   top: 0px;
   opacity: 100; }
+
+.swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 320px;
+  display: flex;
+  justify-content: flex-end; }
+
+.slider {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end; }
