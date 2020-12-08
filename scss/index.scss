@@ -14,9 +14,9 @@ main{
     justify-content: center;
     align-items: center;
 }
-.secD{
+.sec_index{
     width: 1500px;
-    .secD_title{
+    .sec_index_title{
         margin-bottom: 40px;
         h2{
             font-family: 'goodtime';
@@ -33,9 +33,10 @@ main{
 .secP{
     background-image: url(../img/psfondo.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
     width: 100vw;
     height: 40vw;
-    background-size: cover;
+    margin-bottom: 40px;
     display: flex;
     justify-content: center;
     align-items: center;

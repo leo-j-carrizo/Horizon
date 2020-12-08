@@ -11,6 +11,10 @@
   font-family: 'ghostclanlaser';
   src: url("../font/ghostclanlaser.ttf") format("truetype"); }
 
+@font-face {
+  font-family: 'X360';
+  src: url("../font/X360.ttf") format("truetype"); }
+
 /*estilos generales*/
 body {
   background-color: black;
@@ -38,23 +42,24 @@ main {
   justify-content: center;
   align-items: center; }
 
-.secD {
+.sec_index {
   width: 1500px; }
-  .secD .secD_title {
+  .sec_index .sec_index_title {
     margin-bottom: 40px; }
-    .secD .secD_title h2 {
+    .sec_index .sec_index_title h2 {
       font-family: 'goodtime';
       color: #66B933; }
-    .secD .secD_title p {
+    .sec_index .sec_index_title p {
       font-family: 'Poppins';
       color: grey; }
 
 .secP {
   background-image: url(../img/psfondo.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
   width: 100vw;
   height: 40vw;
-  background-size: cover;
+  margin-bottom: 40px;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -212,17 +217,19 @@ nav {
 .card_imgBx {
   position: relative;
   width: 100%;
+  height: 280px;
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 20px;
-  z-index: 1; }
+  z-index: 1;
+  transition: 0.5s; }
   .card_imgBx img {
-    width: 120px;
+    height: 100%;
     transition: 0.5s; }
 
-.card:hover .card_imgBx img {
-  width: 100px; }
+.card:hover .card_imgBx {
+  height: 230px; }
 
 .card_description {
   font-family: 'poppins'; }
@@ -260,16 +267,13 @@ nav {
   top: 0px;
   opacity: 100; }
 
-/*correccion de tamano de imagenes png*/
-#dualsense .card_imgBx img {
-  width: 250px; }
+/*correccion detalles de tarjetas*/
+.ps4::after {
+  content: 'PS4'; }
 
-#dualsense:hover .card_imgBx img {
-  width: 200px; }
-
-#dualsense .card_imgBx {
-  padding-top: 60px;
-  padding-bottom: 30px; }
+.xbox::after {
+  content: 'XBOX';
+  font-family: 'X360'; }
 
 .swiper-container {
   width: 100vw;

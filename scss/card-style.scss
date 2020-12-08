@@ -39,20 +39,23 @@
 .card_imgBx{
     position: relative;
     width: 100%;
+    height: 280px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 20px;
     z-index: 1;
+    transition: 0.5s;
     img{
-        width: 120px;
+        height: 100%;
         transition: 0.5s;
     }
     
 
 }
-.card:hover .card_imgBx img{
-    width: 100px;
+.card:hover .card_imgBx{
+    height: 230px;
+    
 }
 
 .card_description{
@@ -96,14 +99,11 @@
     opacity: 100;
 }
 
-/*correccion de tamano de imagenes png*/
-#dualsense .card_imgBx img{
-    width: 250px;
+/*correccion detalles de tarjetas*/
+.ps4::after{
+    content: 'PS4';
 }
-#dualsense:hover .card_imgBx img{
-    width: 200px;
-}
-#dualsense .card_imgBx {
-    padding-top: 60px;
-    padding-bottom: 30px;
+.xbox::after{
+    content: 'XBOX';
+    font-family: 'X360';
 }
