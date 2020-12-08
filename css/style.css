@@ -7,6 +7,10 @@
   font-family: 'slimplay';
   src: url("../font/SlimPlay.ttf") format("truetype"); }
 
+@font-face {
+  font-family: 'ghostclanlaser';
+  src: url("../font/ghostclanlaser.ttf") format("truetype"); }
+
 /*estilos generales*/
 body {
   background-color: black;
@@ -21,16 +25,55 @@ a {
 
 /*siempre primero*/
 /*carrusel*/
+.carousel {
+  margin-bottom: 40px; }
+
 .imgCrBstp {
   height: 25vw; }
 
 /*contenido*/
 main {
   display: flex;
-  justify-content: center; }
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
 
 .secD {
   width: 1500px; }
+  .secD .secD_title {
+    margin-bottom: 40px; }
+    .secD .secD_title h2 {
+      font-family: 'goodtime';
+      color: #66B933; }
+    .secD .secD_title p {
+      font-family: 'Poppins';
+      color: grey; }
+
+.secP {
+  background-image: url(../img/psfondo.jpg);
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 40vw;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .secP .mid1 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .secP .mid2 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .secP #ps5::before {
+    background-color: #003087; }
+  .secP .ps-dualsense::before {
+    background-color: #003087; }
 
 header {
   display: flex;
@@ -46,10 +89,10 @@ header {
   justify-content: center; }
 
 h1 {
-  font-family: 'goodtime';
+  font-family: 'ghostclanlaser';
   color: black;
   text-align: center;
-  font-size: 2rem; }
+  font-size: 3rem; }
 
 .searchBx {
   display: flex;
@@ -139,7 +182,8 @@ nav {
   height: 420px;
   background-color: #1C1C21;
   border-radius: 20px;
-  overflow: hidden; }
+  overflow: hidden;
+  border: 0px; }
 
 .card::before {
   content: '';
@@ -216,10 +260,21 @@ nav {
   top: 0px;
   opacity: 100; }
 
+/*correccion de tamano de imagenes png*/
+#dualsense .card_imgBx img {
+  width: 250px; }
+
+#dualsense:hover .card_imgBx img {
+  width: 200px; }
+
+#dualsense .card_imgBx {
+  padding-top: 60px;
+  padding-bottom: 30px; }
+
 .swiper-container {
-  width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px; }
+  width: 100vw;
+  padding-bottom: 0px;
+  margin-bottom: 100px; }
 
 .swiper-slide {
   background-position: center;

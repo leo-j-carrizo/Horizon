@@ -1,12 +1,63 @@
 /*carrusel*/
+.carousel{
+    margin-bottom: 40px;
+}
 .imgCrBstp{
     height: 25vw;
+    
 }
+
 /*contenido*/
 main{
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 .secD{
     width: 1500px;
+    .secD_title{
+        margin-bottom: 40px;
+        h2{
+            font-family: 'goodtime';
+            color: $secondary-color;
+        }
+        p{
+            font-family: 'Poppins';
+            color: $tertiary-color; 
+        }
+        
+    }
+}
+
+.secP{
+    background-image: url(../img/psfondo.jpg);
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 40vw;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .mid1{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .mid2{
+        width: 50%;
+        height: 100%;
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    #ps5::before{
+        background-color: $psblue-color;
+    }
+
+    .ps-dualsense::before{
+        background-color: $psblue-color;
+    }
 }

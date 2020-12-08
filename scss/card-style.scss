@@ -10,6 +10,7 @@
     background-color: $gray-variant;
     border-radius: 20px;
     overflow: hidden;
+    border: 0px;
 }
 .card::before{
     content: '';
@@ -93,4 +94,16 @@
 .card:hover .card_description a{
     top: 0px;
     opacity: 100;
+}
+
+/*correccion de tamano de imagenes png*/
+#dualsense .card_imgBx img{
+    width: 250px;
+}
+#dualsense:hover .card_imgBx img{
+    width: 200px;
+}
+#dualsense .card_imgBx {
+    padding-top: 60px;
+    padding-bottom: 30px;
 }
