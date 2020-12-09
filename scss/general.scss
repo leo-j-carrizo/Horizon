@@ -4,9 +4,10 @@ $tertiary-color:grey;
 $gray-variant:#1C1C21;
 $font-color: white;
 $psblue-color:#003087;
+$xboxgreen-color:#007F00;
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @font-face {
     font-family: 'goodtime';
     src: url('../font/GOODTIME.ttf')  format('truetype');
@@ -24,7 +25,14 @@ $psblue-color:#003087;
     font-family: 'X360';
     src: url('../font/X360.ttf')  format('truetype');
 }
-
+@font-face {
+    font-family: 'rog';
+    src: url('../font/rog.ttf')  format('truetype');
+}
+@font-face {
+    font-family: 'corsair';
+    src: url('../font/corsair.ttf')  format('truetype');
+}
 
 /*estilos generales*/
 body{
@@ -37,5 +45,4 @@ a{
     text-decoration: none !important; 
     color: $tertiary-color;
     font-family: 'goodtime';
-    
 }

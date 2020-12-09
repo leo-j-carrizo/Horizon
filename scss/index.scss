@@ -14,6 +14,7 @@ main{
     justify-content: center;
     align-items: center;
 }
+/*secciones propias*/
 .sec_index{
     width: 1500px;
     .sec_index_title{
@@ -29,11 +30,17 @@ main{
         
     }
 }
+.sec_index_catalogo{
+    display: flex;
+    justify-content: space-between;
 
-.secP{
+}
+/*secciones tematicas*/
+.sec_console{
     background-image: url(../img/psfondo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     width: 100vw;
     height: 40vw;
     margin-bottom: 40px;
@@ -41,24 +48,28 @@ main{
     justify-content: center;
     align-items: center;
     .mid1{
-        width: 50%;
+        flex-grow: 1;
         height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
     }
     .mid2{
-        width: 50%;
-        height: 100%;
-        display: flex;
-    justify-content: center;
-    align-items: center;
+        @extend .mid1;
     }
-    #ps5::before{
+    .mid3{
+        @extend .mid1;
+    }
+    .ps5::before{
         background-color: $psblue-color;
+    }
+    .xbox::before{
+        background-color: $xboxgreen-color;
     }
 
-    .ps-dualsense::before{
-        background-color: $psblue-color;
-    }
 }
+.sec_console-xbox{
+    @extend .sec_console;
+    background-image: url(../img/xbox.jpg);
+}
+

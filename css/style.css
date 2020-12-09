@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @font-face {
   font-family: 'goodtime';
   src: url("../font/GOODTIME.ttf") format("truetype"); }
@@ -14,6 +15,14 @@
 @font-face {
   font-family: 'X360';
   src: url("../font/X360.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'rog';
+  src: url("../font/rog.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'corsair';
+  src: url("../font/corsair.ttf") format("truetype"); }
 
 /*estilos generales*/
 body {
@@ -42,6 +51,7 @@ main {
   justify-content: center;
   align-items: center; }
 
+/*secciones propias*/
 .sec_index {
   width: 1500px; }
   .sec_index .sec_index_title {
@@ -53,32 +63,35 @@ main {
       font-family: 'Poppins';
       color: grey; }
 
-.secP {
+.sec_index_catalogo {
+  display: flex;
+  justify-content: space-between; }
+
+/*secciones tematicas*/
+.sec_console, .sec_console-xbox {
   background-image: url(../img/psfondo.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   width: 100vw;
   height: 40vw;
   margin-bottom: 40px;
   display: flex;
   justify-content: center;
   align-items: center; }
-  .secP .mid1 {
-    width: 50%;
+  .sec_console .mid1, .sec_console-xbox .mid1, .sec_console .mid2, .sec_console-xbox .mid2, .sec_console .mid3, .sec_console-xbox .mid3 {
+    flex-grow: 1;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center; }
-  .secP .mid2 {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-  .secP #ps5::before {
+  .sec_console .ps5::before, .sec_console-xbox .ps5::before {
     background-color: #003087; }
-  .secP .ps-dualsense::before {
-    background-color: #003087; }
+  .sec_console .xbox::before, .sec_console-xbox .xbox::before {
+    background-color: #007F00; }
+
+.sec_console-xbox {
+  background-image: url(../img/xbox.jpg); }
 
 header {
   display: flex;
@@ -188,7 +201,8 @@ nav {
   background-color: #1C1C21;
   border-radius: 20px;
   overflow: hidden;
-  border: 0px; }
+  border: 0px;
+  margin: 0px 20px 40px 0px; }
 
 .card::before {
   content: '';
@@ -217,11 +231,11 @@ nav {
 .card_imgBx {
   position: relative;
   width: 100%;
-  height: 280px;
+  height: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 20px;
+  padding-top: 40px;
   z-index: 1;
   transition: 0.5s; }
   .card_imgBx img {
@@ -274,6 +288,28 @@ nav {
 .xbox::after {
   content: 'XBOX';
   font-family: 'X360'; }
+
+.razer::after {
+  content: 'RAZER';
+  font-family: 'goodtime'; }
+
+.rog::after {
+  content: 'ROG';
+  font-family: 'rog'; }
+
+.aorus::after {
+  content: 'AORUS';
+  font-family: 'goodtime'; }
+
+.msi::after {
+  content: 'msi';
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  font-size: 7rem; }
+
+.corsair::after {
+  content: 'CORSAIR';
+  font-family: 'corsair'; }
 
 .swiper-container {
   width: 100vw;
