@@ -60,16 +60,12 @@ main{
     .mid3{
         @extend .mid1;
     }
-    .ps5::before{
-        background-color: $psblue-color;
-    }
-    .xbox::before{
-        background-color: $xboxgreen-color;
-    }
+    
 
 }
 .sec_console-xbox{
     @extend .sec_console;
     background-image: url(../img/xbox.jpg);
+    margin-bottom: 0px;
 }
 

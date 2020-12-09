@@ -101,13 +101,23 @@
 }
 
 /*correccion detalles de tarjetas*/
-.ps4::after{
+.ps::after{
     content: 'PS4';
+}
+.ps5::after{
+    content: 'PS5';
+}
+.ps::before{
+    background-color: $psblue-color;
 }
 .xbox::after{
     content: 'XBOX';
     font-family: 'X360';
 }
+.xbox::before{
+    background-color: $xboxgreen-color;
+}
+
 .razer::after{
     content: 'RAZER';
     font-family: 'goodtime';
@@ -115,6 +125,9 @@
 .rog::after{
     content: 'ROG';
     font-family: 'rog';
+}
+.rog::before{
+    background-color: $rogred-color;
 }
 .aorus::after{
     content: 'AORUS';
@@ -126,7 +139,14 @@
     font-style: italic;
     font-size: 7rem;
 }
+.msi::before{
+    background-color: $rogred-color;
+}
 .corsair::after{
     content: 'CORSAIR';
     font-family: 'corsair';
 }
+.corsair::before{
+    background-color: $corsairyellow-color;
+}
+

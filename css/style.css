@@ -85,13 +85,10 @@ main {
     display: flex;
     justify-content: center;
     align-items: center; }
-  .sec_console .ps5::before, .sec_console-xbox .ps5::before {
-    background-color: #003087; }
-  .sec_console .xbox::before, .sec_console-xbox .xbox::before {
-    background-color: #007F00; }
 
 .sec_console-xbox {
-  background-image: url(../img/xbox.jpg); }
+  background-image: url(../img/xbox.jpg);
+  margin-bottom: 0px; }
 
 header {
   display: flex;
@@ -183,7 +180,7 @@ nav {
       height: 100%; }
       nav ul li a {
         height: 100%;
-        padding: 13px; }
+        padding: 14px; }
       nav ul li a:hover {
         color: black;
         background-color: #66B933;
@@ -282,12 +279,21 @@ nav {
   opacity: 100; }
 
 /*correccion detalles de tarjetas*/
-.ps4::after {
+.ps::after {
   content: 'PS4'; }
+
+.ps5::after {
+  content: 'PS5'; }
+
+.ps::before {
+  background-color: #003087; }
 
 .xbox::after {
   content: 'XBOX';
   font-family: 'X360'; }
+
+.xbox::before {
+  background-color: #007F00; }
 
 .razer::after {
   content: 'RAZER';
@@ -296,6 +302,9 @@ nav {
 .rog::after {
   content: 'ROG';
   font-family: 'rog'; }
+
+.rog::before {
+  background-color: #a4181d; }
 
 .aorus::after {
   content: 'AORUS';
@@ -307,9 +316,15 @@ nav {
   font-style: italic;
   font-size: 7rem; }
 
+.msi::before {
+  background-color: #a4181d; }
+
 .corsair::after {
   content: 'CORSAIR';
   font-family: 'corsair'; }
+
+.corsair::before {
+  background-color: #FFCC00; }
 
 .swiper-container {
   width: 100vw;
@@ -327,3 +342,36 @@ nav {
   width: 100%;
   display: flex;
   justify-content: flex-end; }
+
+.payment {
+  width: 100%;
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: center; }
+
+.info {
+  width: 100%;
+  background-color: #1C1C21; }
+
+.info_content {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.links {
+  display: flex;
+  justify-self: center;
+  margin: 0 auto;
+  padding: 30px 20px 0 0; }
+  .links ul {
+    padding: 0 20px 0 0; }
+    .links ul li {
+      list-style: none; }
+
+.links--title {
+  font-family: 'Poppins'; }
+
+.redes_iconos {
+  display: flex; }
+  .redes_iconos img {
+    width: 40px; }
