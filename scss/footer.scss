@@ -4,39 +4,100 @@
     background-color: #f8f8f8;
     display: flex;
     justify-content: center;
-    
-
+    align-items: center;
+    overflow: hidden;
+    height: 50px;
 }
 .info{
     width: 100%;
     background-color: $gray-variant;
+    display: flex;
+    justify-content: center;
 }
 .info_content{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+    width: 1300px;
 }
 .links{
     display: flex;
     justify-self: center;
-    margin:0 auto ;
-    padding:30px 20px 0 0;
+    
+    padding:30px 0 20px 0;
+    margin-bottom: 30px;
+    border-bottom:1px solid $tertiary-color ;
     ul{
-        padding:0 20px 0 0;
+        padding:0 60px 0 0;
         li{
             list-style: none;
+            a{
+                font-family: 'Roboto';
+                font-weight: 300;
+                color: $tertiary-color;
+                font-size: 0.9rem;
+            }
+            a:hover{
+                color: $secondary-color;
+            }
         }
     }
 }
 .links--title{
-    font-family: 'Poppins';
+    font-family: 'Roboto';
+    font-weight: 600;
 }
-.redes{
-
+.social{
+    padding:0 60px 0 0;
+    button{
+        @extend .links--title;
+        background: transparent;
+        color: $font-color;
+        border: 1px solid $font-color;
+        padding: 10px;
+        font-size: 0.7rem;
+        transition: 0.5s;
+    }
+    button:hover{
+        background: black;
+        border: 1px solid $secondary-color;
+    }
+    h4{
+        font-family: 'Roboto';
+        font-weight: 500;
+        font-size: 1.05rem;
+        margin-bottom: 20px;
+    
+    }
+    img{
+        height:40px ;
+    }
 }
-.redes_iconos{
+.social_iconos{
     display: flex;
     img{
         width: 40px;
+        margin-right:10px ;
+    }
+
+}
+.partner{
+    margin-bottom: 50px ;
+    h4{
+        font-family: 'Roboto';
+        font-weight: 600;
+        font-size: 1.2rem;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+}
+.partner-img{
+    display: flex;
+    justify-content: center;
+    img{
+        height: 90px;
+        margin-right: 20px;
     }
 }
