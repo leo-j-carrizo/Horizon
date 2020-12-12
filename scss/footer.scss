@@ -83,7 +83,9 @@
 
 }
 .partner{
-    margin-bottom: 50px ;
+    margin-bottom: 10px ;
+    padding-bottom:50px ;
+    border-bottom:1px solid $tertiary-color ;
     h4{
         font-family: 'Roboto';
         font-weight: 600;
@@ -100,4 +102,24 @@
         height: 90px;
         margin-right: 20px;
     }
+}
+.copyright{
+    text-align: center;
+    
+    p{
+        font-family: 'Roboto';
+        font-weight: 300;
+        color: $tertiary-color;
+        font-size: 0.9rem;
+    }
+    a{
+        font-family: 'Roboto';
+        font-weight: 300;
+        color: $tertiary-color;
+        font-size: 0.9rem;
+    }
+    a:hover{
+        color: $secondary-color;
+    }
+    
 }

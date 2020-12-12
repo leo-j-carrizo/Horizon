@@ -63,7 +63,7 @@ main {
       font-family: 'Poppins';
       color: grey; }
 
-.sec_index_catalogo {
+.catalogo_row {
   display: flex;
   justify-content: space-between; }
 
@@ -103,11 +103,15 @@ header {
   align-items: center;
   justify-content: center; }
 
-h1 {
+.brand {
   font-family: 'ghostclanlaser';
   color: black;
   text-align: center;
-  font-size: 3rem; }
+  font-size: 3rem;
+  transition: 0.5s; }
+
+.brand:hover {
+  transform: scale(1.1); }
 
 .searchBx {
   display: flex;
@@ -193,13 +197,13 @@ nav {
 
 .card {
   position: relative;
-  width: 320px;
+  width: 300px;
   height: 420px;
   background-color: #1C1C21;
-  border-radius: 20px;
+  border-radius: 10px;
   overflow: hidden;
   border: 0px;
-  margin: 0px 20px 40px 0px; }
+  margin-bottom: 20px; }
 
 .card::before {
   content: '';
@@ -413,7 +417,9 @@ nav {
     margin-right: 10px; }
 
 .partner {
-  margin-bottom: 50px; }
+  margin-bottom: 10px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid grey; }
   .partner h4 {
     font-family: 'Roboto';
     font-weight: 600;
@@ -427,3 +433,84 @@ nav {
   .partner-img img {
     height: 90px;
     margin-right: 20px; }
+
+.copyright {
+  text-align: center; }
+  .copyright p {
+    font-family: 'Roboto';
+    font-weight: 300;
+    color: grey;
+    font-size: 0.9rem; }
+  .copyright a {
+    font-family: 'Roboto';
+    font-weight: 300;
+    color: grey;
+    font-size: 0.9rem; }
+  .copyright a:hover {
+    color: #66B933; }
+
+.ofertas {
+  background-image: url(../img/santa2.jpg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: 2200px; }
+
+.clockBx {
+  text-align: center;
+  height: 240px; }
+  .clockBx span {
+    font-family: 'Roboto';
+    font-size: 2.5rem;
+    font-weight: 600; }
+  .clockBx h1 {
+    margin-top: 20px;
+    font-family: 'Roboto';
+    font-size: 1.5rem;
+    font-weight: 600; }
+
+.clock-content {
+  width: 530px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 30px; }
+  .clock-content p {
+    font-family: 'Roboto';
+    font-size: 1rem;
+    font-weight: 600; }
+
+#clock {
+  display: flex;
+  justify-content: center; }
+  #clock .number {
+    position: relative;
+    width: 50px;
+    padding: 10px;
+    margin: 0 10px;
+    background-color: white;
+    color: black;
+    font-family: 'Roboto';
+    font-size: 1.5rem; }
+
+.ofertas_productos {
+  background-color: black;
+  width: 1300px;
+  padding: 20px;
+  margin: 0 10px 0 10px; }
+
+.discount-container {
+  position: relative; }
+
+.discount {
+  position: absolute;
+  height: 30px;
+  width: 120px;
+  top: 0px;
+  left: 0px;
+  background-color: black;
+  font-family: 'Roboto';
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 600;
+  color: #66B933;
+  clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 0% 100%); }

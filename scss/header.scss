@@ -11,11 +11,15 @@ header{
     align-items: center;
     justify-content: center;
 }
-h1{
+.brand{
     font-family: 'ghostclanlaser';
     color: $primary-color;
     text-align: center; 
     font-size: 3rem;
+    transition: 0.5s;
+}
+.brand:hover{
+    transform: scale(1.1);
 }
 .searchBx{
     display: flex;

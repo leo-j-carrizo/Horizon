@@ -1,0 +1,77 @@
+.ofertas{
+    background-image: url(../img/santa2.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size:2200px;
+    
+
+}
+.clockBx{
+    text-align: center;
+    height: 240px;
+    span{
+        font-family: 'Roboto';
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+    h1{
+        margin-top: 20px;
+        font-family: 'Roboto';
+        font-size: 1.5rem;
+        font-weight: 600;
+    
+    }
+}
+.clock-content{
+    width: 530px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 30px;
+    p{
+        font-family: 'Roboto';
+        font-size: 1rem;
+        font-weight: 600;
+    }
+}
+#clock{
+    display: flex;
+    justify-content: center;
+
+    .number{
+        position: relative;
+        width: 50px;
+        padding: 10px;
+        margin: 0 10px;
+        background-color: white;
+        color: black;
+        font-family: 'Roboto';
+        font-size: 1.5rem;
+    }
+}
+.ofertas_productos{
+    background-color: $primary-color;
+    width: 1300px;
+    padding: 20px;
+    margin: 0 10px 0 10px;
+    
+    
+}
+.discount-container{
+    position: relative;
+}
+.discount{
+    position: absolute;
+    height: 30px;
+    width: 120px;
+    top: 0px;
+    left: 0px;
+    background-color:$primary-color;
+    font-family: 'Roboto';
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 600;
+    color: $secondary-color;
+    clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 0% 100%);
+
+}
