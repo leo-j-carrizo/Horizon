@@ -244,7 +244,7 @@ nav {
     transition: 0.5s; }
 
 .card:hover .card_imgBx {
-  height: 230px; }
+  height: 220px; }
 
 .card_description {
   font-family: 'poppins'; }
@@ -261,7 +261,8 @@ nav {
     font-size: 18px;
     font-weight: 500;
     text-transform: uppercase;
-    letter-spacing: 1px; }
+    letter-spacing: 1px;
+    padding-bottom: 10px; }
   .card_description .price {
     font-size: 24px;
     font-weight: 500;
@@ -462,7 +463,7 @@ nav {
     font-family: 'Roboto';
     font-size: 2.5rem;
     font-weight: 600; }
-  .clockBx h1 {
+  .clockBx h2 {
     margin-top: 20px;
     font-family: 'Roboto';
     font-size: 1.5rem;
@@ -514,3 +515,135 @@ nav {
   font-weight: 600;
   color: #66B933;
   clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 0% 100%); }
+
+.contact {
+  box-sizing: content-box;
+  position: relative;
+  display: flex;
+  padding: 50px 0px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Roboto';
+  width: 1000px; }
+  .contact .description {
+    text-align: center;
+    box-sizing: inherit; }
+    .contact .description h2 {
+      font-family: 'goodtime';
+      font-size: 2rem;
+      font-weight: 500;
+      color: #66B933; }
+    .contact .description p {
+      font-size: 1rem;
+      font-weight: 400;
+      color: grey; }
+  .contact .info-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    box-sizing: inherit; }
+    .contact .info-container .contactBx {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      box-sizing: inherit;
+      margin-right: 20px; }
+      .contact .info-container .contactBx .box {
+        position: relative;
+        display: flex;
+        padding: 20px 0;
+        box-sizing: inherit; }
+        .contact .info-container .contactBx .box .icon {
+          width: 60px;
+          height: 60px;
+          font-size: 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          box-sizing: inherit; }
+        .contact .info-container .contactBx .box .phone-size {
+          font-size: 60px; }
+        .contact .info-container .contactBx .box .text {
+          box-sizing: inherit;
+          display: flex;
+          margin-left: 20px;
+          flex-direction: column; }
+          .contact .info-container .contactBx .box .text h3 {
+            font-size: 1.8rem;
+            margin-bottom: 0px;
+            color: #66B933;
+            font-family: 'goodtime'; }
+          .contact .info-container .contactBx .box .text p {
+            color: grey;
+            font-size: 1.2rem; }
+    .contact .info-container .contactForm {
+      width: 50%;
+      padding: 40px;
+      background-color: #1C1C21;
+      box-sizing: inherit;
+      border-radius: 10px; }
+      .contact .info-container .contactForm h2 {
+        font-size: 2rem;
+        color: #66B933;
+        font-family: 'goodtime'; }
+      .contact .info-container .contactForm .inputBox {
+        position: relative;
+        width: 100%;
+        margin-top: 10px;
+        box-sizing: inherit; }
+        .contact .info-container .contactForm .inputBox input, .contact .info-container .contactForm .inputBox textarea {
+          background: transparent;
+          width: 100%;
+          padding: 5px 0;
+          font-size: 1rem;
+          margin: 10px 0;
+          border: none;
+          border-bottom: 2px solid #66B933;
+          color: white;
+          outline: none;
+          resize: none;
+          box-sizing: inherit; }
+        .contact .info-container .contactForm .inputBox span {
+          position: absolute;
+          left: 0;
+          padding: 5px 0;
+          font-size: 1rem;
+          margin: 10px 0;
+          pointer-events: none;
+          transition: 0.5s;
+          color: grey;
+          box-sizing: inherit; }
+        .contact .info-container .contactForm .inputBox input:focus ~ span,
+        .contact .info-container .contactForm .inputBox input:valid ~ span,
+        .contact .info-container .contactForm .inputBox textarea:focus ~ span,
+        .contact .info-container .contactForm .inputBox textarea:valid ~ span {
+          color: #66B933;
+          font-size: 0.8rem;
+          transform: translateY(-20px); }
+        .contact .info-container .contactForm .inputBox input[type="submit"] {
+          width: 100px;
+          color: #66B933;
+          cursor: pointer;
+          padding: 10px;
+          background: #1C1C21;
+          box-sizing: inherit;
+          transition: 0.5s; }
+        .contact .info-container .contactForm .inputBox input[type="submit"]:hover {
+          background-color: black; }
+
+@media (max-width: 1089px) {
+  .contact {
+    width: 85vw; } }
+
+@media (max-width: 677px) {
+  .contact .info-container {
+    flex-direction: column; }
+    .contact .info-container .contactBx {
+      width: 100%;
+      margin: 0px; }
+    .contact .info-container .contactForm {
+      width: 100%;
+      box-sizing: border-box; } }
