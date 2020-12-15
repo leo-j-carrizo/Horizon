@@ -743,7 +743,8 @@ nav {
     color: grey; }
 
 .about-us_version {
-  width: 1140px; }
+  width: 1140px;
+  margin-bottom: 50px; }
   .about-us_version h3 {
     color: #66B933;
     font-family: 'goodtime';
