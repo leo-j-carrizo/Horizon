@@ -2,6 +2,7 @@ $primary-color:black;
 $secondary-color:#66B933;
 $tertiary-color:grey;
 $gray-variant:#1C1C21;
+$gray-variant2:#222222;
 $font-color: white;
 $psblue-color:#003087;
 $xboxgreen-color:#007F00;
@@ -22,6 +23,10 @@ $corsairyellow-color:#FFCC00;
 @font-face {
     font-family: 'ghostclanlaser';
     src: url('../font/ghostclanlaser.ttf')  format('truetype');
+}
+@font-face {
+    font-family: 'ghostclan';
+    src: url('../font/ghostclan.ttf')  format('truetype');
 }
 @font-face {
     font-family: 'X360';
