@@ -1,174 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ofertas</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="../css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ofertas</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
-    <header>
-        <div class="titleBx">
-            <a href="../index.html"><h1 class="brand">Horizon</h1></a>
-        </div>
-        <div class="searchBx">
-            <input type="text" name="Search" placeholder="Search..." >
-            <button>BUSCAR</button>
-        </div>
-        <div class="logBx">
-            <a href="#">Iniciar Sesion</a>
-            <a href="#">Registrarse</a>
-        </div>
-        <div class="cartBx">
-            <a href="#"><img src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjUxMnB0IiB2aWV3Qm94PSIwIC0zMSA1MTIuMDAwMjYgNTEyIiB3aWR0aD0iNTEycHQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0ibTE2NC45NjA5MzggMzAwLjAwMzkwNmguMDIzNDM3Yy4wMTk1MzEgMCAuMDM5MDYzLS4wMDM5MDYuMDU4NTk0LS4wMDM5MDZoMjcxLjk1NzAzMWM2LjY5NTMxMiAwIDEyLjU4MjAzMS00LjQ0MTQwNiAxNC40MjE4NzUtMTAuODc4OTA2bDYwLTIxMGMxLjI5Mjk2OS00LjUyNzM0NC4zODY3MTktOS4zOTQ1MzItMi40NDUzMTMtMTMuMTUyMzQ0LTIuODM1OTM3LTMuNzU3ODEyLTcuMjY5NTMxLTUuOTY4NzUtMTEuOTc2NTYyLTUuOTY4NzVoLTM2Ni42MzI4MTJsLTEwLjcyMjY1Ny00OC4yNTM5MDZjLTEuNTI3MzQzLTYuODYzMjgyLTcuNjEzMjgxLTExLjc0NjA5NC0xNC42NDQ1MzEtMTEuNzQ2MDk0aC05MGMtOC4yODUxNTYgMC0xNSA2LjcxNDg0NC0xNSAxNXM2LjcxNDg0NCAxNSAxNSAxNWg3Ny45Njg3NWMxLjg5ODQzOCA4LjU1MDc4MSA1MS4zMTI1IDIzMC45MTc5NjkgNTQuMTU2MjUgMjQzLjcxMDkzOC0xNS45NDE0MDYgNi45Mjk2ODctMjcuMTI1IDIyLjgyNDIxOC0yNy4xMjUgNDEuMjg5MDYyIDAgMjQuODEyNSAyMC4xODc1IDQ1IDQ1IDQ1aDI3MmM4LjI4NTE1NiAwIDE1LTYuNzE0ODQ0IDE1LTE1cy02LjcxNDg0NC0xNS0xNS0xNWgtMjcyYy04LjI2OTUzMSAwLTE1LTYuNzMwNDY5LTE1LTE1IDAtOC4yNTc4MTIgNi43MDcwMzEtMTQuOTc2NTYyIDE0Ljk2MDkzOC0xNC45OTYwOTR6bTMxMi4xNTIzNDMtMjEwLjAwMzkwNi01MS40Mjk2ODcgMTgwaC0yNDguNjUyMzQ0bC00MC0xODB6bTAgMCIvPjxwYXRoIGQ9Im0xNTAgNDA1YzAgMjQuODEyNSAyMC4xODc1IDQ1IDQ1IDQ1czQ1LTIwLjE4NzUgNDUtNDUtMjAuMTg3NS00NS00NS00NS00NSAyMC4xODc1LTQ1IDQ1em00NS0xNWM4LjI2OTUzMSAwIDE1IDYuNzMwNDY5IDE1IDE1cy02LjczMDQ2OSAxNS0xNSAxNS0xNS02LjczMDQ2OS0xNS0xNSA2LjczMDQ2OS0xNSAxNS0xNXptMCAwIi8+PHBhdGggZD0ibTM2MiA0MDVjMCAyNC44MTI1IDIwLjE4NzUgNDUgNDUgNDVzNDUtMjAuMTg3NSA0NS00NS0yMC4xODc1LTQ1LTQ1LTQ1LTQ1IDIwLjE4NzUtNDUgNDV6bTQ1LTE1YzguMjY5NTMxIDAgMTUgNi43MzA0NjkgMTUgMTVzLTYuNzMwNDY5IDE1LTE1IDE1LTE1LTYuNzMwNDY5LTE1LTE1IDYuNzMwNDY5LTE1IDE1LTE1em0wIDAiLz48L3N2Zz4=" alt="shopping cart"></a>
-        </div>
-    </header>
-    <nav>
-<ul>
-<li><a href="./ofertas.html">Ofertas</a></li>
-<li><a href="#">Productos</a></li>
-<li><a href="./sobre-nosotros.html">Sobre Nosotros</a></li>
-<li><a href="./contactanos.html">Contactanos</a></li>
-</ul>
-    </nav>
-    <main class="ofertas">
-      <section class="clockBx">
-          <h2 class="clock-title"><span>OFERTAS DE NAVIDAD</span><br> Las mejores ofertar para celebrar</h2>
-          <div class="clock-content">
-            <p>Termina en :</p>
-            <div id="clock"></div> 
+  <header>
+    <div class="titleBx">
+      <a href="../index.html">
+        <h1 class="brand">Horizon</h1>
+      </a>
+    </div>
+    <div class="searchBx">
+      <input type="text" name="Search" placeholder="Search...">
+      <button>BUSCAR</button>
+    </div>
+    <div class="logBx">
+      <a href="#">Iniciar Sesion</a>
+      <a href="#">Registrarse</a>
+    </div>
+    <div class="cartBx">
+      <a href="#"><img
+          src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjUxMnB0IiB2aWV3Qm94PSIwIC0zMSA1MTIuMDAwMjYgNTEyIiB3aWR0aD0iNTEycHQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0ibTE2NC45NjA5MzggMzAwLjAwMzkwNmguMDIzNDM3Yy4wMTk1MzEgMCAuMDM5MDYzLS4wMDM5MDYuMDU4NTk0LS4wMDM5MDZoMjcxLjk1NzAzMWM2LjY5NTMxMiAwIDEyLjU4MjAzMS00LjQ0MTQwNiAxNC40MjE4NzUtMTAuODc4OTA2bDYwLTIxMGMxLjI5Mjk2OS00LjUyNzM0NC4zODY3MTktOS4zOTQ1MzItMi40NDUzMTMtMTMuMTUyMzQ0LTIuODM1OTM3LTMuNzU3ODEyLTcuMjY5NTMxLTUuOTY4NzUtMTEuOTc2NTYyLTUuOTY4NzVoLTM2Ni42MzI4MTJsLTEwLjcyMjY1Ny00OC4yNTM5MDZjLTEuNTI3MzQzLTYuODYzMjgyLTcuNjEzMjgxLTExLjc0NjA5NC0xNC42NDQ1MzEtMTEuNzQ2MDk0aC05MGMtOC4yODUxNTYgMC0xNSA2LjcxNDg0NC0xNSAxNXM2LjcxNDg0NCAxNSAxNSAxNWg3Ny45Njg3NWMxLjg5ODQzOCA4LjU1MDc4MSA1MS4zMTI1IDIzMC45MTc5NjkgNTQuMTU2MjUgMjQzLjcxMDkzOC0xNS45NDE0MDYgNi45Mjk2ODctMjcuMTI1IDIyLjgyNDIxOC0yNy4xMjUgNDEuMjg5MDYyIDAgMjQuODEyNSAyMC4xODc1IDQ1IDQ1IDQ1aDI3MmM4LjI4NTE1NiAwIDE1LTYuNzE0ODQ0IDE1LTE1cy02LjcxNDg0NC0xNS0xNS0xNWgtMjcyYy04LjI2OTUzMSAwLTE1LTYuNzMwNDY5LTE1LTE1IDAtOC4yNTc4MTIgNi43MDcwMzEtMTQuOTc2NTYyIDE0Ljk2MDkzOC0xNC45OTYwOTR6bTMxMi4xNTIzNDMtMjEwLjAwMzkwNi01MS40Mjk2ODcgMTgwaC0yNDguNjUyMzQ0bC00MC0xODB6bTAgMCIvPjxwYXRoIGQ9Im0xNTAgNDA1YzAgMjQuODEyNSAyMC4xODc1IDQ1IDQ1IDQ1czQ1LTIwLjE4NzUgNDUtNDUtMjAuMTg3NS00NS00NS00NS00NSAyMC4xODc1LTQ1IDQ1em00NS0xNWM4LjI2OTUzMSAwIDE1IDYuNzMwNDY5IDE1IDE1cy02LjczMDQ2OSAxNS0xNSAxNS0xNS02LjczMDQ2OS0xNS0xNSA2LjczMDQ2OS0xNSAxNS0xNXptMCAwIi8+PHBhdGggZD0ibTM2MiA0MDVjMCAyNC44MTI1IDIwLjE4NzUgNDUgNDUgNDVzNDUtMjAuMTg3NSA0NS00NS0yMC4xODc1LTQ1LTQ1LTQ1LTQ1IDIwLjE4NzUtNDUgNDV6bTQ1LTE1YzguMjY5NTMxIDAgMTUgNi43MzA0NjkgMTUgMTVzLTYuNzMwNDY5IDE1LTE1IDE1LTE1LTYuNzMwNDY5LTE1LTE1IDYuNzMwNDY5LTE1IDE1LTE1em0wIDAiLz48L3N2Zz4="
+          alt="shopping cart"></a>
+    </div>
+  </header>
+  <nav class="sections">
+    <ul>
+      <li><a href="./ofertas.html">Ofertas</a></li>
+      <li><a href="./productos.html">Productos</a></li>
+      <li><a href="./sobre-nosotros.html">Sobre Nosotros</a></li>
+      <li><a href="./contactanos.html">Contactanos</a></li>
+    </ul>
+  </nav>
+  <main class="ofertas">
+    <section class="clockBx">
+      <h2 class="clock-title"><span>OFERTAS DE NAVIDAD</span><br> Las mejores ofertar para celebrar</h2>
+      <div class="clock-content">
+        <p>Termina en :</p>
+        <div id="clock"></div>
+      </div>
+    </section>
+    <section class="ofertas_productos">
+      <div class="catalogo_row">
+        <div class="discount-container">
+          <div class="card razer">
+            <div class="card_imgBx">
+              <img src="../img/productos/mouse-razer.png" alt="">
+            </div>
+            <div class="card_description">
+              <h3>mouse razer lazerhead rgb</h3>
+              <h2 class="price">$32.<small>99</small></h2>
+              <a href="">Comprar Ahora</a>
+            </div>
           </div>
-      </section>
-      <section class="ofertas_productos">
-        <div class="catalogo_row">
-            <div class="discount-container">
-                <div class="card razer">
-                <div class="card_imgBx">
-                    <img src="../img/productos/mouse-razer.png" alt="">
-                </div>
-                <div class="card_description">
-                    <h3>mouse razer lazerhead rgb</h3>
-                    <h2 class="price">$32.<small>99</small></h2>
-                    <a href="">Comprar Ahora</a>
-                </div>
-                </div>
-                <div class="discount">
-                    -67%
-                </div>
-            </div>
-            <div class="discount-container">
-                <div class="card rog">
-                    <div class="card_imgBx">
-                      <img src="../img/productos/rog-teclado.png" alt="">
-                    </div>
-                    <div class="card_description">
-                      <h3>Teclado Rog claymore rgb</h3>
-                      <h2 class="price">$299.<small>99</small></h2>
-                      <a href="">Comprar Ahora</a>
-                    </div>
-                  </div>
-                <div class="discount">
-                    -25%
-                </div>
-            </div>
-            <div class="discount-container">
-                <div class="card rog">
-                    <div class="card_imgBx">
-                      <img src="../img/productos/rog-monitor.png" alt="">
-                    </div>
-                    <div class="card_description">
-                      <h3>MONITOR LED 23.8" STRIX GAMER FULL HD 240hz 1ms</h3>
-                      <h2 class="price">$245.<small>99</small></h2>
-                      <a href="">Comprar Ahora</a>
-                    </div>
-                  </div>
-                <div class="discount">
-                    -59%
-                </div>
-            </div>
-            <div class="discount-container">
-                <div class="card razer">
-                    <div class="card_imgBx">
-                      <img src="../img/productos/razer-mousepad.png" alt="">
-                    </div>
-                    <div class="card_description">
-                      <h3>Mouse pad Razer firefly chroma hard</h3>
-                      <h2 class="price">$41.<small>99</small></h2>
-                      <a href="">Comprar Ahora</a>
-                    </div>
-                  </div>
-                <div class="discount">
-                  -16%
-                </div>
-            </div>
-        </div>
-        <div class="catalogo_row">
-        <div class="discount-container">
-            <div class="card msi">
-                <div class="card_imgBx">
-                  <img src="../img/productos/msi-monitor.png" alt="">
-                </div>
-                <div class="card_description">
-                  <h3>Msi Monitor Gamer MAG24C 24'' 144HZ 1MS </h3>
-                  <h2 class="price">$215.<small>99</small></h2>
-                  <a href="">Comprar Ahora</a>
-                </div>
-            </div>
-            <div class="discount">
-              -28%
-            </div>
+          <div class="discount">
+            -67%
+          </div>
         </div>
         <div class="discount-container">
-            <div class="card corsair">
-                <div class="card_imgBx">
-                  <img src="../img/productos/corsair-mouse.png" alt="">
-                </div>
-                <div class="card_description">
-                  <h3>Mouse Corsair Harpoon RGB PRO</h3>
-                  <h2 class="price">$39.<small>99</small></h2>
-                  <a href="">Comprar Ahora</a>
-                </div>
-              </div>
-            <div class="discount">
-                -34%
+          <div class="card rog">
+            <div class="card_imgBx">
+              <img src="../img/productos/rog-teclado.png" alt="">
             </div>
+            <div class="card_description">
+              <h3>Teclado Rog claymore rgb</h3>
+              <h2 class="price">$299.<small>99</small></h2>
+              <a href="">Comprar Ahora</a>
+            </div>
+          </div>
+          <div class="discount">
+            -25%
+          </div>
         </div>
         <div class="discount-container">
-            <div class="card corsair">
-                <div class="card_imgBx">
-                  <img src="../img/productos/corsair-headset.png" alt="">
-                </div>
-                <div class="card_description">
-                  <h3>Corsair VOID Wireless Dolby 7.1 RGB Gaming</h3>
-                  <h2 class="price">$36.<small>39</small></h2>
-                  <a href="">Comprar Ahora</a>
-                </div>
-              </div>
-              
-            <div class="discount">
-                -72%
+          <div class="card rog">
+            <div class="card_imgBx">
+              <img src="../img/productos/rog-monitor.png" alt="">
             </div>
+            <div class="card_description">
+              <h3>MONITOR LED 23.8" STRIX GAMER FULL HD 240hz 1ms</h3>
+              <h2 class="price">$245.<small>99</small></h2>
+              <a href="">Comprar Ahora</a>
+            </div>
+          </div>
+          <div class="discount">
+            -59%
+          </div>
         </div>
         <div class="discount-container">
-            <div class="card msi">
-                <div class="card_imgBx">
-                  <img src="../img/productos/msi-mousepad.png" alt="">
-                </div>
-                <div class="card_description">
-                  <h3>Msi Mousepad sistorm gaming hard</h3>
-                  <h2 class="price">$10.<small>79</small></h2>
-                  <a href="">Comprar Ahora</a>
-                </div>
-              </div>
-            <div class="discount">
-              -46%
+          <div class="card razer">
+            <div class="card_imgBx">
+              <img src="../img/productos/razer-mousepad.png" alt="">
             </div>
+            <div class="card_description">
+              <h3>Mouse pad Razer firefly chroma hard</h3>
+              <h2 class="price">$41.<small>99</small></h2>
+              <a href="">Comprar Ahora</a>
+            </div>
+          </div>
+          <div class="discount">
+            -16%
+          </div>
         </div>
+      </div>
+      <div class="catalogo_row">
+        <div class="discount-container">
+          <div class="card msi">
+            <div class="card_imgBx">
+              <img src="../img/productos/msi-monitor.png" alt="">
+            </div>
+            <div class="card_description">
+              <h3>Msi Monitor Gamer MAG24C 24'' 144HZ 1MS </h3>
+              <h2 class="price">$215.<small>99</small></h2>
+              <a href="">Comprar Ahora</a>
+            </div>
+          </div>
+          <div class="discount">
+            -28%
+          </div>
         </div>
-        <div class="catalogo_row">
+        <div class="discount-container">
+          <div class="card corsair">
+            <div class="card_imgBx">
+              <img src="../img/productos/corsair-mouse.png" alt="">
+            </div>
+            <div class="card_description">
+              <h3>Mouse Corsair Harpoon RGB PRO</h3>
+              <h2 class="price">$39.<small>99</small></h2>
+              <a href="">Comprar Ahora</a>
+            </div>
+          </div>
+          <div class="discount">
+            -34%
+          </div>
+        </div>
+        <div class="discount-container">
+          <div class="card corsair">
+            <div class="card_imgBx">
+              <img src="../img/productos/corsair-headset.png" alt="">
+            </div>
+            <div class="card_description">
+              <h3>Corsair VOID Wireless Dolby 7.1 RGB Gaming</h3>
+              <h2 class="price">$36.<small>39</small></h2>
+              <a href="">Comprar Ahora</a>
+            </div>
+          </div>
+
+          <div class="discount">
+            -72%
+          </div>
+        </div>
+        <div class="discount-container">
+          <div class="card msi">
+            <div class="card_imgBx">
+              <img src="../img/productos/msi-mousepad.png" alt="">
+            </div>
+            <div class="card_description">
+              <h3>Msi Mousepad sistorm gaming hard</h3>
+              <h2 class="price">$10.<small>79</small></h2>
+              <a href="">Comprar Ahora</a>
+            </div>
+          </div>
+          <div class="discount">
+            -46%
+          </div>
+        </div>
+      </div>
+      <div class="catalogo_row">
         <div class="discount-container">
           <div class="card razer">
             <div class="card_imgBx">
@@ -180,9 +187,9 @@
               <a href="">Comprar Ahora</a>
             </div>
           </div>
-            <div class="discount">
-                -66%
-            </div>
+          <div class="discount">
+            -66%
+          </div>
         </div>
         <div class="discount-container">
           <div class="card ps">
@@ -195,9 +202,9 @@
               <a href="">Comprar Ahora</a>
             </div>
           </div>
-            <div class="discount">
-                -54%
-            </div>
+          <div class="discount">
+            -54%
+          </div>
         </div>
         <div class="discount-container">
           <div class="card rog">
@@ -210,9 +217,9 @@
               <a href="">Comprar Ahora</a>
             </div>
           </div>
-            <div class="discount">
-                -31%
-            </div>
+          <div class="discount">
+            -31%
+          </div>
         </div>
         <div class="discount-container">
           <div class="card razer">
@@ -225,102 +232,102 @@
               <a href="">Comprar Ahora</a>
             </div>
           </div>
-            <div class="discount">
-                -41%
-            </div>
-        </div>
-        </div>
-      </section>
-    </main>
-    <footer>
-        <div class="payment">
-          <img src="../img/payment/1.png" alt="">
-          <img src="../img/payment/2.png" alt="">
-          <img src="../img/payment/22.png" alt="">
-          <img src="../img/payment/5.png" alt="">
-          <img src="../img/payment/12.png" alt="">
-          <img src="../img/payment/17.png" alt="">
-          <img src="../img/payment/8.png" alt="">
-        </div>
-        <div class="info">
-          <div class="info_content">
-            <div class="links">
-              <ul>
-                <li class="links--title">Sobre Horizon</li>
-                <li><a href="">Sobre nosotros</a></li>
-                <li><a href="">Nuestro equipo</a></li>
-                <li><a href="">Contactanos</a></li>
-              </ul>
-              <ul>
-                <li class="links--title">Comprar</li>
-                <li><a href="">Como comprar</a></li>
-                <li><a href="">Lista de productos</a></li>
-                <li><a href="">Combos</a></li>
-                <li><a href="">Tienda</a></li>
-              </ul>
-              <ul>
-                <li class="links--title">Ayuda</li>
-                <li><a href="">FAQ</a></li>
-                <li><a href="">Envios</a></li>
-                <li><a href="">Crear un ticket</a></li>
-              </ul>
-              <ul>
-                <li class="links--title">Comunidad</li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Sorteos</a></li>
-              </ul>
-              <div class="social">
-                <h4>Siguenos</h4>
-                <div class="social_iconos">
-                  <a href=""><img src="../img/redes/facebook.svg" alt=""></a>
-                  <a href=""><img src="../img/redes/instagram.svg" alt=""></a>
-                  <a href=""><img src="../img/redes/twiter.svg" alt=""></a>
-                </div>
-              </div>
-              <div class="social">
-                <h4>Negocios</h4>
-                <button>Vende con nosotros</button>
-              </div>
-              <div class="social">
-                <h4>Mira nuestras reviews en</h4>
-                <img src="../img/logo/trustpilot-logo.png" alt="">
-              </div>
-            </div>
-            <div class="partner">
-              <h4>A PROUD PARTNER OF</h4>
-              <div class="partner-img">
-                <img src="../img/logo/razer-logo.png" alt="">
-                <img src="../img/logo/rog-log.png" alt="">
-                <img src="../img/logo/msi-logo.png" alt="">
-                <img src="../img/logo/corsair-logo.png" alt="">
-                <img src="../img/logo/ps-logo.png" alt="">
-                <img src="../img/logo/xbox-logo.svg" alt="">
-              </div>
-            </div>
-            <div class="copyright">
-                <p>Copyright © 2020 Horizon. All Rights Reserved. <a href="">Terms and Conditions</a>, <a href="">Privacy policy</a>, <a href="">Cookie preferences</a></p>
-            </div>
+          <div class="discount">
+            -41%
           </div>
         </div>
-    </footer>
-    <!--Clock script-->
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="payment">
+      <img src="../img/payment/1.png" alt="">
+      <img src="../img/payment/2.png" alt="">
+      <img src="../img/payment/22.png" alt="">
+      <img src="../img/payment/5.png" alt="">
+      <img src="../img/payment/12.png" alt="">
+      <img src="../img/payment/17.png" alt="">
+      <img src="../img/payment/8.png" alt="">
+    </div>
+    <div class="info">
+      <div class="info_content">
+        <div class="links">
+          <ul>
+            <li class="links--title">Sobre Horizon</li>
+            <li><a href="">Sobre nosotros</a></li>
+            <li><a href="">Nuestro equipo</a></li>
+            <li><a href="">Contactanos</a></li>
+          </ul>
+          <ul>
+            <li class="links--title">Comprar</li>
+            <li><a href="">Como comprar</a></li>
+            <li><a href="">Lista de productos</a></li>
+            <li><a href="">Combos</a></li>
+            <li><a href="">Tienda</a></li>
+          </ul>
+          <ul>
+            <li class="links--title">Ayuda</li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">Envios</a></li>
+            <li><a href="">Crear un ticket</a></li>
+          </ul>
+          <ul>
+            <li class="links--title">Comunidad</li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Sorteos</a></li>
+          </ul>
+          <div class="social">
+            <h4>Siguenos</h4>
+            <div class="social_iconos">
+              <a href=""><img src="../img/redes/facebook.svg" alt=""></a>
+              <a href=""><img src="../img/redes/instagram.svg" alt=""></a>
+              <a href=""><img src="../img/redes/twiter.svg" alt=""></a>
+            </div>
+          </div>
+          <div class="social">
+            <h4>Negocios</h4>
+            <button>Vende con nosotros</button>
+          </div>
+          <div class="social">
+            <h4>Mira nuestras reviews en</h4>
+            <img src="../img/logo/trustpilot-logo.png" alt="">
+          </div>
+        </div>
+        <div class="partner">
+          <h4>A PROUD PARTNER OF</h4>
+          <div class="partner-img">
+            <img src="../img/logo/razer-logo.png" alt="">
+            <img src="../img/logo/rog-log.png" alt="">
+            <img src="../img/logo/msi-logo.png" alt="">
+            <img src="../img/logo/corsair-logo.png" alt="">
+            <img src="../img/logo/ps-logo.png" alt="">
+            <img src="../img/logo/xbox-logo.svg" alt="">
+          </div>
+        </div>
+        <div class="copyright">
+          <p>Copyright © 2020 Horizon. All Rights Reserved. <a href="">Terms and Conditions</a>, <a href="">Privacy
+              policy</a>, <a href="">Cookie preferences</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--Clock script-->
 
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.js"
-      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-      crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous">
     </script>
-    <script src="../plugin/countdown.js"></script>
-    <script type="text/javascript">
-        $('#clock').countdown('2020/12/30', function(event){
-            var $this = $(this).html(event.strftime(''
-                +'<div><div class="number">%w</div><div>Semanas</div></div>'
-                +'<div><div class="number">%d</div><div>Dias</div></div>'
-                +'<div><div class="number">%H</div><div>Horas</div></div>'
-                +'<div><div class="number">%M</div><div>Minutos</div></div>'
-                +'<div><div class="number">%S</div><div>Segundos</div></div>'
-                ))
+  <script src="../plugin/countdown.js"></script>
+  <script type="text/javascript">
+    $('#clock').countdown('2020/12/30', function (event) {
+      var $this = $(this).html(event.strftime(''
+        + '<div><div class="number">%w</div><div>Semanas</div></div>'
+        + '<div><div class="number">%d</div><div>Dias</div></div>'
+        + '<div><div class="number">%H</div><div>Horas</div></div>'
+        + '<div><div class="number">%M</div><div>Minutos</div></div>'
+        + '<div><div class="number">%S</div><div>Segundos</div></div>'
+      ))
     })
-    </script>
+  </script>
 </body>
+
 </html>

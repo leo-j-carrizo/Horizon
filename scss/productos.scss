@@ -1,0 +1,142 @@
+.catalogue{
+    width: 1140px;
+    margin-top: 50px;
+    
+    .catalogue_title{
+        color: $secondary-color ;
+        font-family: 'goodtime';
+        margin-bottom: 30px;
+    }
+}
+.product{
+    width: 100%;
+    display: flex;
+    margin-bottom: 50px;
+}
+.product_filter{
+    width: 25%;
+    background-color: $gray-variant2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    padding: 20px;
+}
+.product_filter_serchbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: $gray-variant;
+    input{
+        width: 80%;
+        background-color: $gray-variant;
+        border: none;
+        height: 30px;
+        padding: 10px 0 10px 10px;
+        color: $font-color;
+        height: 40px;
+    }
+    .icon{
+        width: 20%;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: inherit;
+    }
+}
+.product_filter_price{
+    width: 100%;
+    h4{
+        font-family: 'goodtime';
+        color: $secondary-color;
+    }
+    
+
+}
+.product_filter_price_box{
+    display: flex;
+    justify-content: space-between;
+    input{
+        padding: 10px;
+        width: 45%;
+        background-color: $gray-variant;
+        border: none;
+        color: $font-color;
+    }
+}
+.product_filter_type{
+    width: 100%;
+    margin-top: 15px;
+    h4{
+        font-family: 'goodtime';
+        color: $secondary-color;
+    }
+    ul{
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+        font-family: 'Roboto';
+        font-weight: 500;
+        li{
+            input [type="checkbox"]{
+                background-color: $gray-variant;
+            }
+        }
+    }
+    
+}
+.product_box_list{
+    
+    display: flex;
+    padding-left:20px;
+    
+    flex-wrap: wrap;
+    .card{
+        width: 270px;
+        height: 378px;
+        margin-right: 23px;
+        
+    }
+    .card_imgBx{
+        height: 225px;
+        padding-top: 36px;
+    }
+    .card:hover .card_imgBx{
+        height: 198px;
+    }
+    .card_description{
+        padding:18px;
+        h3{
+            font-size: 16.2px;
+            padding-bottom:9px ;
+        }
+        .price{
+            font-size: 21.6px;
+        }
+        a{
+            padding: 9px 27px;
+            font-size: 14px;
+        }
+        
+    }
+}
+.product_box_pagination{
+    display: flex;
+    justify-content: center;
+    
+    ul{
+        margin: 0px;
+    }
+    
+    .page-link{
+        color: $secondary-color;
+        background-color: $gray-variant;
+        border-color: $gray-variant2;
+    }
+
+}

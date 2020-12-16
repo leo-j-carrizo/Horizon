@@ -173,23 +173,23 @@ header {
     width: 25px;
     height: 25px; }
 
-nav {
+.sections {
   width: 100%;
   background-color: #1C1C21; }
-  nav ul {
+  .sections ul {
     margin: 0px;
     padding: 0px;
     display: flex;
     align-items: center;
     justify-content: center; }
-    nav ul li {
+    .sections ul li {
       list-style: none;
       padding: 10px;
       height: 100%; }
-      nav ul li a {
+      .sections ul li a {
         height: 100%;
         padding: 14px; }
-      nav ul li a:hover {
+      .sections ul li a:hover {
         color: black;
         background-color: #66B933;
         transition: 0.5s; }
@@ -763,3 +763,113 @@ nav {
   .about-us_version_box_content ul {
     color: grey;
     padding-left: 20px; }
+
+.catalogue {
+  width: 1140px;
+  margin-top: 50px; }
+  .catalogue .catalogue_title {
+    color: #66B933;
+    font-family: 'goodtime';
+    margin-bottom: 30px; }
+
+.product {
+  width: 100%;
+  display: flex;
+  margin-bottom: 50px; }
+
+.product_filter {
+  width: 25%;
+  background-color: #222222;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px; }
+
+.product_filter_serchbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: #1C1C21; }
+  .product_filter_serchbox input {
+    width: 80%;
+    background-color: #1C1C21;
+    border: none;
+    height: 30px;
+    padding: 10px 0 10px 10px;
+    color: white;
+    height: 40px; }
+  .product_filter_serchbox .icon {
+    width: 20%;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: inherit; }
+
+.product_filter_price {
+  width: 100%; }
+  .product_filter_price h4 {
+    font-family: 'goodtime';
+    color: #66B933; }
+
+.product_filter_price_box {
+  display: flex;
+  justify-content: space-between; }
+  .product_filter_price_box input {
+    padding: 10px;
+    width: 45%;
+    background-color: #1C1C21;
+    border: none;
+    color: white; }
+
+.product_filter_type {
+  width: 100%;
+  margin-top: 15px; }
+  .product_filter_type h4 {
+    font-family: 'goodtime';
+    color: #66B933; }
+  .product_filter_type ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto';
+    font-weight: 500; }
+    .product_filter_type ul li input [type="checkbox"] {
+      background-color: #1C1C21; }
+
+.product_box_list {
+  display: flex;
+  padding-left: 20px;
+  flex-wrap: wrap; }
+  .product_box_list .card {
+    width: 270px;
+    height: 378px;
+    margin-right: 23px; }
+  .product_box_list .card_imgBx {
+    height: 225px;
+    padding-top: 36px; }
+  .product_box_list .card:hover .card_imgBx {
+    height: 198px; }
+  .product_box_list .card_description {
+    padding: 18px; }
+    .product_box_list .card_description h3 {
+      font-size: 16.2px;
+      padding-bottom: 9px; }
+    .product_box_list .card_description .price {
+      font-size: 21.6px; }
+    .product_box_list .card_description a {
+      padding: 9px 27px;
+      font-size: 14px; }
+
+.product_box_pagination {
+  display: flex;
+  justify-content: center; }
+  .product_box_pagination ul {
+    margin: 0px; }
+  .product_box_pagination .page-link {
+    color: #66B933;
+    background-color: #1C1C21;
+    border-color: #222222; }
