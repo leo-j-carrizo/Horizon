@@ -96,7 +96,7 @@ main {
 
 header {
   display: flex;
-  height: 10vh;
+  height: 80px;
   width: 100vw; }
 
 .titleBx {
@@ -148,9 +148,14 @@ header {
   .searchBx input:focus + button {
     opacity: 100; }
 
+.auxBx {
+  display: flex;
+  height: 100%;
+  width: 250px; }
+
 .logBx {
   font-size: 1rem;
-  width: 180px;
+  width: 170px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -161,9 +166,8 @@ header {
     transition: 0.5s; }
 
 .cartBx {
-  width: 50px;
+  width: 90px;
   height: 100%;
-  margin-right: 30px;
   background-color: #66B933;
   display: flex;
   align-items: center;
@@ -172,6 +176,32 @@ header {
   .cartBx img {
     width: 25px;
     height: 25px; }
+
+@media (max-width: 844px) {
+  header {
+    flex-direction: column;
+    height: inherit; }
+  .titleBx {
+    width: 100%;
+    margin-bottom: 20px; }
+  .searchBx {
+    margin-bottom: 20px;
+    padding: 0px; }
+  .auxBx {
+    align-self: center;
+    height: 50px;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 82%; }
+  .logBx {
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 80%; }
+    .logBx a {
+      padding-right: 10px; }
+  .cartBx {
+    width: 20%; } }
 
 .sections {
   width: 100%;
@@ -184,7 +214,7 @@ header {
     justify-content: center; }
     .sections ul li {
       list-style: none;
-      padding: 10px;
+      padding: 10px 0 10px 10px;
       height: 100%; }
       .sections ul li a {
         height: 100%;
@@ -779,12 +809,13 @@ header {
 
 .product_filter {
   width: 25%;
-  background-color: #222222;
+  background-color: #1C1C21;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px; }
+  padding: 20px;
+  border-radius: 5px; }
 
 .product_filter_serchbox {
   display: flex;
@@ -792,15 +823,17 @@ header {
   align-items: center;
   width: 100%;
   margin-bottom: 20px;
-  background-color: #1C1C21; }
+  background-color: #222222;
+  border-radius: 5px; }
   .product_filter_serchbox input {
     width: 80%;
-    background-color: #1C1C21;
+    background-color: #222222;
     border: none;
     height: 30px;
     padding: 10px 0 10px 10px;
     color: white;
-    height: 40px; }
+    height: 40px;
+    border-radius: 5px; }
   .product_filter_serchbox .icon {
     width: 20%;
     font-size: 20px;
@@ -821,9 +854,10 @@ header {
   .product_filter_price_box input {
     padding: 10px;
     width: 45%;
-    background-color: #1C1C21;
+    background-color: #222222;
     border: none;
-    color: white; }
+    color: white;
+    border-radius: 5px; }
 
 .product_filter_type {
   width: 100%;
@@ -873,3 +907,126 @@ header {
     color: #66B933;
     background-color: #1C1C21;
     border-color: #222222; }
+
+.lg h2 {
+  text-transform: capitalize; }
+
+.login {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex; }
+
+.login_imgBx {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  overflow: hidden; }
+  .login_imgBx img {
+    height: 100%; }
+
+.login_contentBx {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  font-family: 'Roboto'; }
+
+.login_contentBx_formBx {
+  width: 50%; }
+  .login_contentBx_formBx h2 {
+    font-family: 'goodtime';
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    border-bottom: 4px solid #222222;
+    display: inline-block;
+    color: #66B933; }
+  .login_contentBx_formBx h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 16px;
+    margin: 80px 0px 15px;
+    font-weight: 400; }
+  .login_contentBx_formBx .inicio {
+    font-weight: 400;
+    color: grey;
+    font-size: 0.8rem; }
+  .login_contentBx_formBx .inicio:hover {
+    color: #66B933; }
+
+.login_contentBx_formBx_inputBx {
+  margin-bottom: 20px;
+  color: white;
+  width: 100%; }
+  .login_contentBx_formBx_inputBx label {
+    margin-bottom: 5px;
+    display: inline-block;
+    font-size: 0.9rem;
+    font-family: 'goodtime'; }
+  .login_contentBx_formBx_inputBx input {
+    box-sizing: border-box;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 2px solid #66B933;
+    border-radius: 30px;
+    background: transparent;
+    font-weight: 500; }
+  .login_contentBx_formBx_inputBx input[type="submit"] {
+    background: #222222;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-family: 'goodtime'; }
+  .login_contentBx_formBx_inputBx input[type="submit"]:hover {
+    background: #66B933;
+    color: black; }
+  .login_contentBx_formBx_inputBx p {
+    font-size: 14px; }
+  .login_contentBx_formBx_inputBx p a {
+    color: #66B933; }
+
+.login_contentBx_formBx_remember {
+  margin-bottom: 10px;
+  color: white;
+  font-size: 14px; }
+
+.login_contentBx_formBx_redes {
+  display: flex;
+  border: grey;
+  justify-content: center;
+  margin-bottom: 30px; }
+  .login_contentBx_formBx_redes img {
+    width: 40px;
+    transition: 0.6s;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    cursor: pointer; }
+  .login_contentBx_formBx_redes img:hover {
+    transform: rotate(360deg) scale(1.3, 1.3); }
+
+@media (max-width: 768px) {
+  .login_imgBx {
+    position: absolute;
+    width: 100%;
+    height: 100%; }
+  .login_contentBx {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 1; }
+  .login_contentBx_formBx {
+    width: 100%;
+    padding: 40px;
+    background: black;
+    margin: 50px; }
+  .login_contentBx_formBx h3 {
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    font-size: 16px;
+    margin: 30px 0px 10px; } }

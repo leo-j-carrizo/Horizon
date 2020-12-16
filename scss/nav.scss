@@ -1,7 +1,6 @@
 .sections{
     width: 100%;
     background-color: $gray-variant;
-
     ul{
         margin: 0px;
         padding: 0px;
@@ -10,7 +9,7 @@
         justify-content: center;
         li{
             list-style: none;
-            padding: 10px;
+            padding: 10px 0 10px 10px;
             height:100%;
             a{
                 height: 100%;
@@ -24,4 +23,7 @@
         }
 
     }
+}
+@media (max-width: 844px){
+
 }
