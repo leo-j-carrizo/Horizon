@@ -347,7 +347,8 @@ header {
     background-color: #66B933;
     border-radius: 30px;
     text-transform: uppercase;
-    transition: 0.5s; }
+    transition: 0.5s;
+    font-size: 0.9rem; }
 
 .card:hover .card_description a {
   top: 0px;
