@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @font-face {
@@ -39,6 +40,9 @@ a {
   text-decoration: none !important;
   color: grey;
   font-family: 'goodtime'; }
+
+a:hover {
+  color: #66B933; }
 
 /*siempre primero*/
 /*carrusel*/
@@ -277,7 +281,8 @@ header {
     top: 0; }
     .sections-movil .toggle {
       position: relative;
-      height: 50px; }
+      height: 50px;
+      border-bottom: 2px solid #66B933; }
       .sections-movil .toggle .icon-burger {
         position: absolute;
         right: 5%;
@@ -999,14 +1004,19 @@ header {
   margin-bottom: 50px; }
 
 .product_filter {
-  width: 25%;
+  width: 100%;
   background-color: #1C1C21;
-  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px;
   border-radius: 5px; }
+
+#toggle-filter {
+  display: none; }
+
+.left-filter {
+  display: none; }
 
 .product_filter_serchbox {
   display: flex;
@@ -1065,6 +1075,48 @@ header {
     .product_filter_type ul li input [type="checkbox"] {
       background-color: #1C1C21; }
 
+.product_box_short {
+  position: relative;
+  height: 50px; }
+  .product_box_short .order-list {
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%); }
+    .product_box_short .order-list .order-button {
+      font-family: 'goodtime';
+      font-size: 1.2rem; }
+      .product_box_short .order-list .order-button i {
+        font-size: 1.2rem;
+        padding-right: 10px; }
+  .product_box_short #toggle {
+    display: none; }
+  .product_box_short .order {
+    background-color: #222222;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    height: 100px;
+    width: 250px;
+    transition: 0.5s;
+    list-style: none;
+    padding: 0 20px;
+    overflow: hidden;
+    opacity: 0;
+    border-radius: 0px 0px 5px 5px; }
+    .product_box_short .order a {
+      font-family: 'Roboto';
+      font-weight: 400; }
+  .product_box_short #toggle:checked ~ .order {
+    opacity: 100; }
+  .product_box_short .order-button:hover {
+    color: #66B933; }
+
 .product_box_list {
   display: flex;
   padding-left: 20px;
@@ -1098,6 +1150,68 @@ header {
     color: #66B933;
     background-color: #1C1C21;
     border-color: #222222; }
+
+@media (max-width: 1180px) {
+  .catalogue {
+    width: 95vw; }
+    .catalogue .card {
+      width: 20vw; }
+      .catalogue .card .card_imgBx {
+        padding-top: 10px; }
+      .catalogue .card a {
+        text-align: center;
+        font-size: 0.7rem; }
+    .catalogue .catalogue_title {
+      padding-left: 20px; }
+  .product_filter-movil {
+    position: fixed;
+    z-index: 200;
+    left: 0;
+    top: 0;
+    height: 100%;
+    display: flex;
+    align-items: center; }
+  .product_filter {
+    width: 0px;
+    align-self: flex-start;
+    height: 100%;
+    overflow: hidden;
+    transition: 0.5s;
+    padding: 0; }
+  .left-filter {
+    height: 50px;
+    width: 50px;
+    background-color: #1C1C21;
+    clip-path: circle(90% at left);
+    z-index: 1000;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .left-filter .pestaña {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+  #toggle-filter:checked ~ .product_filter {
+    width: 80%;
+    padding: 20px; } }
+
+@media (max-width: 948px) {
+  .catalogue .card {
+    width: 27vw; } }
+
+@media (max-width: 640px) {
+  .catalogue .card {
+    width: 39vw; } }
+
+@media (max-width: 420px) {
+  .catalogue .product_box_list {
+    display: flex;
+    justify-content: center; }
+  .catalogue .card {
+    width: 60vw; } }
 
 .lg h2 {
   text-transform: capitalize; }
