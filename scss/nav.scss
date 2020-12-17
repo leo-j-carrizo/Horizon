@@ -1,29 +1,27 @@
 .sections{
     width: 100%;
     background-color: $gray-variant;
-    ul{
-        margin: 0px;
-        padding: 0px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        li{
-            list-style: none;
-            padding: 10px 0 10px 10px;
-            height:100%;
-            a{
-                height: 100%;
-                padding: 14px;
-            }
-            a:hover{
-                color: $primary-color;
-                background-color: $secondary-color;
-                transition: 0.5s;
-            }
-        }
-
-    }
+    position: relative;
 }
-@media (max-width: 844px){
+.links-nav{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    li{
+        list-style: none;
+        padding: 10px 0 10px 10px;
+        height:100%;
+        a{
+            height: 100%;
+            padding: 14px;
+        }
+        a:hover{
+            color: $primary-color;
+            background-color: $secondary-color;
+            transition: 0.5s;
+        }
+    }
 
 }

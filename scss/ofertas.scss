@@ -9,6 +9,7 @@
 .clockBx{
     text-align: center;
     height: 240px;
+    
     span{
         font-family: 'goodtime';
         font-size: 2.5rem;
@@ -20,6 +21,7 @@
         font-family: 'Roboto';
         font-size: 1.5rem;
         font-weight: 600;
+       
     
     }
 }
@@ -53,9 +55,12 @@
 .ofertas_productos{
     background-color: $primary-color;
     width: 1300px;
-    padding: 20px;
-    margin: 0 10px 0 10px;
+    padding: 20px 10px;
     
+    
+    .card{
+        margin: 0px 10px 20px 10px;
+    }
     
 }
 .discount-container{
@@ -75,4 +80,54 @@
     color: $secondary-color;
     clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 0% 100%);
 
+}
+@media (max-width: 1339px){
+    .ofertas_productos{
+        width: 95vw;
+        
+    }
+
+}
+@media (max-width: 1095px){
+    .ofertas_productos{
+        width: 100vw;
+        
+    }
+}
+@media (max-width: 590px){
+    .clockBx{
+        width: 95vw;
+    }
+}
+
+@media (max-width: 566px){
+    .clockBx{
+        height: 42vw;
+        h2{
+            font-size: 4vw;
+        }
+        span{
+            font-size: 7vw;
+        }
+    }
+    .clock-content{
+        width: 100%;
+        margin-top: 5vw;
+        p{
+            font-size: 3vw;
+        }
+
+    }
+    #clock{
+        div{
+            font-size: 4vw;
+        }
+        .number{
+            width: 10vw;
+            height: 10vw;
+            font-size: 4vw;
+        }
+    }
+
+    
 }

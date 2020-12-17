@@ -7,7 +7,9 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
+    padding: 0px;
     h2{
+        text-align: center;
         font-family: 'ghostclan';
         font-size: 5rem;
         color: $primary-color;
@@ -57,12 +59,30 @@
     width: 1140px;
     margin-bottom: 50px;
     display: flex;
-    justify-content: center;   
+    justify-content: center; 
+
+      
     
 }
 .about-us_text_box_content{
-    width: 50%;
-    padding-right:50px ;
+    width: 570px;
+    
+    h3{
+    
+        color: $secondary-color;
+        font-family: 'goodtime';
+    }
+    p{
+        color: $tertiary-color;
+    }
+    a{
+        font-family: inherit;
+        color: $secondary-color;
+    }
+}
+.about-us_text_box_content--flex{
+    width: 570px;
+    padding-right:40px ;
     h3{
     
         color: $secondary-color;
@@ -94,10 +114,13 @@
     width: 1140px;
     display: flex;
     margin-top: 20px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
 }
 .about-us_features_box_content{
-    width: 33%;
-    padding-right:50px ;
+    width: 320px;
+
     h4{
         font-family: 'goodtime';
     }
@@ -119,10 +142,11 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-
+    
 }
 .about-us_version_box_content{
-    width: 50%;
+    width: 200px;
+    padding-right:30px ;
     
     h4{
         color: $secondary-color;
@@ -133,3 +157,38 @@
         padding-left: 20px;
     }
 }
+@media (max-width: 1190px){
+    .about-us{
+        section{
+            width: 100vw;
+            padding-left:  40px;
+            padding-right:  40px;
+        }
+        
+        .about-us_features_box{
+            width: 100%;
+        }
+    }
+}
+@media (max-width: 879px){
+    .about-us_head{
+        height: 40vw;
+        
+        h2{
+            font-size: 8.5vw;
+        }
+        h3{
+            font-size: 3.5vw;
+        }
+    }
+}
+@media (max-width: 650px){
+    .about-us_text_box_content{
+        width: 100%;
+    }
+    .about-us_text_box--flex{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+}
+

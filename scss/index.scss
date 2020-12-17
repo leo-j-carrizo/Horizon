@@ -32,7 +32,11 @@ main{
 }
 .catalogo_row{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+    .card{
+        margin-right: 23px;
+    }
     
 
 }
@@ -69,4 +73,50 @@ main{
     background-image: url(../img/xbox.jpg);
     margin-bottom: 0px;
 }
+.sec_console{ .swiper-button-prev,.swiper-button-next{
+    color: $psblue-color;
+}}
+.sec_console-xbox{.swiper-button-prev,.swiper-button-next{
+    color: $xboxgreen-color;
+}
+}
 
+
+@media (max-width: 1338px){
+    .sec_index{
+        width: 100vw;
+        padding: 0 20px;
+    }
+}
+@media (max-width: 1205px){
+    .sec_console,.sec_console-xbox{
+        height: 500px;
+    }
+    
+}
+@media (max-width: 669px){
+    .sec_console{
+        .mid1{
+            display: none;
+        }
+        .mid2{
+            display: none;
+        }
+    }
+}
+@media (max-width: 979px){
+    .sec_console-xbox{
+        .mid1{
+            display: none;
+        }
+        .mid2{
+            display: none;
+        }
+        .mid1{
+            display: none;
+        }
+        .mid2{
+            display: none;
+        }
+    }
+}

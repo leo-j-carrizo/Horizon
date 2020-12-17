@@ -7,7 +7,8 @@
 .swiper-slide {
     background-position: center;
     background-size: cover;
-    width: 320px;
+    width: 300px;
+    height: 420px;
     display: flex;
     justify-content: flex-end;
     
@@ -16,4 +17,30 @@
     width: 100%;
     display: flex;
     justify-content: flex-end;
+}
+
+.swiper-container-flip{
+    display: none;
+    width: 300px;
+    height: 420px;
+    .swiper-slide{
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+    }
+
+}
+@media (max-width: 669px){
+    .swiper-container-flip{
+        display: block;
+    }
+    
+}
+@media (max-width: 979px){
+    .sec_console-xbox{
+        .swiper-container-flip{
+            display: block;
+        }
+    }
 }

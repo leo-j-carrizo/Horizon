@@ -36,13 +36,14 @@
     </div>
   </header>
   <nav class="sections">
-    <ul>
+    <ul class="links-nav">
       <li><a href="./secciones/ofertas.html">Ofertas</a></li>
       <li><a href="./secciones/productos.html">Productos</a></li>
       <li><a href="./secciones/sobre-nosotros.html">Sobre Nosotros</a></li>
       <li><a href="./secciones/contactanos.html">Contactanos</a></li>
     </ul>
   </nav>
+
   <!-- carrusel -->
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
@@ -252,7 +253,40 @@
           </div>
         </div>
       </div>
+      <div class="swiper-container-flip">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card ps ps5">
+              <div class="card_imgBx">
+                <img src="./img/productos/ps5.png" alt="">
+              </div>
+              <div class="card_description">
+                <h3>PS5 Blueray Edition</h3>
+                <h2 class="price">$499.<small>99</small></h2>
+                <a href="">Comprar Ahora</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card ps ps5">
+              <div class="card_imgBx">
+                <img src="./img/productos/dualsense.png" alt="">
+              </div>
+              <div class="card_description">
+                <h3>PS5 DualSense</h3>
+                <h2 class="price">$499.<small>99</small></h2>
+                <a href="">Comprar Ahora</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+      
     </section>
+
     <!--segmento tecnologia-->
     <section class="sec_index">
       <div class="sec_index_title">
@@ -300,8 +334,7 @@
             <a href="">Comprar Ahora</a>
           </div>
         </div>
-      </div>
-      <div class="catalogo_row">
+      
         <div class="card msi">
           <div class="card_imgBx">
             <img src="./img/productos/msi-monitor.png" alt="">
@@ -342,8 +375,7 @@
             <a href="">Comprar Ahora</a>
           </div>
         </div>
-      </div>
-      <div class="catalogo_row">
+      
         <div class="card razer">
           <div class="card_imgBx">
             <img src="./img/productos/razer-headset.png" alt="">
@@ -424,7 +456,50 @@
           </div>
         </div>
       </div>
+      <div class="swiper-container-flip">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card xbox">
+              <div class="card_imgBx">
+                <img src="./img/productos/xbox.png" alt="">
+              </div>
+              <div class="card_description">
+                <h3>Xbox Series X</h3>
+                <h2 class="price">$499.<small>99</small></h2>
+                <a href="">Comprar Ahora</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card xbox">
+              <div class="card_imgBx">
+                <img src="./img/productos/xboxcontrol.png" alt="">
+              </div>
+              <div class="card_description">
+                <h3>Xbox Series Controller</h3>
+                <h2 class="price">$59.<small>99</small></h2>
+                <a href="">Comprar Ahora</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card xbox">
+              <div class="card_imgBx">
+                <img src="./img/productos/xboxs.png" alt="">
+              </div>
+              <div class="card_description">
+                <h3>Xbox Series S</h3>
+                <h2 class="price">$299.<small>99</small></h2>
+                <a href="">Comprar Ahora</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
     </section>
+    
   </main>
   <footer>
     <div class="payment">
@@ -531,6 +606,26 @@
       loop: true,
     });
   </script>
+  <!--flip-->
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container-flip', {
+      effect: 'flip',
+      grabCursor: true,
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      loop: true,
+    });
+  </script>
+
 </body>
 
 </html>
