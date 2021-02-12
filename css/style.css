@@ -1156,8 +1156,6 @@ header {
     width: 95vw; }
     .catalogue .card {
       width: 20vw; }
-      .catalogue .card .card_imgBx {
-        padding-top: 10px; }
       .catalogue .card a {
         text-align: center;
         font-size: 0.7rem; }
