@@ -2,19 +2,19 @@
     {
         "nombre": "PS5 Blueray Edition",
         "marca": "Playstation",
-        "id": "1",
+        "id": 0,
         "precio": 499.99
     },
     {
         "nombre": "Xbox Series X",
         "marca": "Xbox",
-        "id": "2",
+        "id": 1,
         "precio": 499.99
     },
     {
         "nombre": "Xbox Series S",
         "marca": "Xbox",
-        "id": "3",
+        "id": 2,
         "precio": 299.99
     }
 ]
