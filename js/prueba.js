@@ -7,38 +7,22 @@ let tarjeta = $(".card");
 botonCompra.click((e)=>{
 e.preventDefault()
 
-})
+});
 
 
 tarjeta.click(
     function(){
 
         let dataId = $(this).data("id")
-        let indice = 1
-        let accesoBase = baseProductos.responseJSON[indice]
-
         
-        for(var i = $(this).data("id"); i == accesoBase.id;indice++){
-            if(accesoBase.id == i){
-
-                alert(accesoBase.nombre);
-                break;
+        
+        for(var i = 0; dataId >= baseProductos.responseJSON[i].id;i++){
+            if(baseProductos.responseJSON[i].id == dataId){
+                alert(baseProductos.responseJSON[i].nombre,)
+                break
             }
-            else{
-                alert("no")
-            }
-        }
+        }   
+    })
 
-        
 
-        // if(dataId == accesoBase){
-        //     alert(baseProductos.responseJSON[indice].nombre)
-        // }
-        // else{
-            
-        
-
-        
-    }
-)
-
+    
