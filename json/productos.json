@@ -1,22 +1,20 @@
-{
-    "productos": [
-        {
-            "Nombre": "PS5 Blueray Edition",
-            "Marca": "Playstation",
-            "Id": "1",
-            "Precio": 499.99
-        },
-        {
-            "Nombre": "Xbox Series X",
-            "Marca": "Xbox",
-            "Id": "2",
-            "Precio": 499.99
-        },
-        {
-            "Nombre": "Xbox Series S",
-            "Marca": "Xbox",
-            "Id": "3",
-            "Precio": 299.99
-        }
-    ]
-}
+[
+    {
+        "nombre": "PS5 Blueray Edition",
+        "marca": "Playstation",
+        "id": "1",
+        "precio": 499.99
+    },
+    {
+        "nombre": "Xbox Series X",
+        "marca": "Xbox",
+        "id": "2",
+        "precio": 499.99
+    },
+    {
+        "nombre": "Xbox Series S",
+        "marca": "Xbox",
+        "id": "3",
+        "precio": 299.99
+    }
+]
