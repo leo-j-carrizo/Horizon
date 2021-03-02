@@ -12,18 +12,33 @@ e.preventDefault()
 
 tarjeta.click(
     function(){
-        
-        let nose = baseProductos.responseJSON[0].id
-        for(var i = $(this).data("id"); i >= nose;nose++){
-            if(nose = i){
 
-                alert(baseProductos.responseJSON[i].nombre);
+        let dataId = $(this).data("id")
+        let indice = 1
+        let accesoBase = baseProductos.responseJSON[indice]
+
+        
+        for(var i = $(this).data("id"); i == accesoBase.id;indice++){
+            if(accesoBase.id == i){
+
+                alert(accesoBase.nombre);
                 break;
             }
             else{
                 alert("no")
             }
         }
+
+        
+
+        // if(dataId == accesoBase){
+        //     alert(baseProductos.responseJSON[indice].nombre)
+        // }
+        // else{
+            
+        
+
+        
     }
 )
 
