@@ -3,32 +3,35 @@
         "nombre": "PS5 Blueray Edition",
         "marca": "Playstation",
         "id": 0,
-        "precio": 499.99
+        "precio": 499.99,
+        "descripcion": "Con tu consola PlayStation 5 tendrás entretenimiento asegurado todos los días. Su tecnología fue creada para poner nuevos retos tanto a jugadores principiantes como expertos. Calidad de otro nivel Vas a poder reproducir música, ver tus películas y series favoritas a través de las aplicaciones descargables.Adaptada a tus necesidades Guardá tus apps, fotos, videos y mucho más en el disco duro, que cuenta con una capacidad de 825 GB. Al contar con un procesador de 8 núcleos y uno gráfico, brinda una experiencia dinámica, respuestas ágiles, y transiciones fluidas de imágenes en alta definición. Por otro lado, tiene puerto USB y salida HDMI, que permiten conectar accesorios y cargar la batería de tu control mientras jugás."
     },
     {
         "nombre": "PS5 Spiderman: Miles Morales",
         "marca": "Playstation",
         "id": 3,
-        "precio": 49.99
+        "precio": 49.99,
+        "descripcion": "Marvel's Spider-Man: Miles Morales es un videojuego de acción y aventuras desarrollado por Insomniac Games y publicado por Sony Interactive Entertainment para PlayStation 4 y PlayStation 5. Está basado en el superhéroe de Marvel Comics Miles Morales. Es el segundo juego de la serie Marvel's Spider-Man, después de Marvel's Spider-Man (2018)."
     },
     {
         "nombre": "Xbox Series X",
         "marca": "Xbox",
         "id": 1,
-        "precio": 499.99
+        "precio": 499.99,
+        "descripcion": "La consola Xbox Series X es la consola más rápida y potente de la historia. Experimentá la velocidad y el rendimiento de la próxima generación de juegos con Xbox Velocity Architecture, impulsada por un disco SSD personalizado y software integrado."
     },
     {
         "nombre": "Xbox Series S",
         "marca": "Xbox",
         "id": 4,
-        "precio": 299.99
+        "precio": 299.99,
+        "descripcion": "La consola Xbox Series S es la consola más rápida y potente de la historia. Experimentá la velocidad y el rendimiento de la próxima generación de juegos con Xbox Velocity Architecture, impulsada por un disco SSD personalizado y software integrado."
     },
     {
         "nombre": "PS4 Friday the 13th",
         "marca": "Playstation",
         "id": 2,
-        "precio": 59.99
+        "precio": 59.99,
+        "descripcion": "Friday the 13th: The Game es un videojuego cooperativo para PS4 basado en las películas de la saga cinematográfica de Viernes 13. Ha sido desarrollado gracias a una campaña de financiación de Kickstarter y combina acción estándar con multijugador. El título goza de gran popularidad y una fuerte comunidad online, siendo uno de los principales éxitos en plataformas de visualización como Twitch y Youtube. "
     }
 ]
-    
-    
