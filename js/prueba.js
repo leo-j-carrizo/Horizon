@@ -16,7 +16,6 @@ tarjeta.click(
     
     function(){
         let dataId = $(this).data("id");
-        alert(dataId)
         localStorage.setItem('id-producto', dataId)
         window.location.href = "./secciones/detalles.html";
     }

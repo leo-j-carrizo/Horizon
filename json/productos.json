@@ -8,20 +8,28 @@
         "assets" : "../img/productos/ps5.png"
     },
     {
-        "nombre": "PS5 Spiderman: Miles Morales",
-        "marca": "Playstation",
-        "id": 3,
-        "precio": 49.99,
-        "descripcion": "Marvel's Spider-Man: Miles Morales es un videojuego de acción y aventuras desarrollado por Insomniac Games y publicado por Sony Interactive Entertainment para PlayStation 4 y PlayStation 5. Está basado en el superhéroe de Marvel Comics Miles Morales. Es el segundo juego de la serie Marvel's Spider-Man, después de Marvel's Spider-Man (2018).",
-        "assets" : "./img/productos/spidermanps5.png"
-    },
-    {
         "nombre": "Xbox Series X",
         "marca": "Xbox",
         "id": 1,
         "precio": 499.99,
         "descripcion": "La consola Xbox Series X es la consola más rápida y potente de la historia. Experimentá la velocidad y el rendimiento de la próxima generación de juegos con Xbox Velocity Architecture, impulsada por un disco SSD personalizado y software integrado.",
         "assets" : "../img/productos/xbox.png"
+    },
+    {
+        "nombre": "PS4 Friday the 13th",
+        "marca": "Playstation",
+        "id": 2,
+        "precio": 59.99,
+        "descripcion": "Friday the 13th: The Game es un videojuego cooperativo para PS4 basado en las películas de la saga cinematográfica de Viernes 13. Ha sido desarrollado gracias a una campaña de financiación de Kickstarter y combina acción estándar con multijugador. El título goza de gran popularidad y una fuerte comunidad online, siendo uno de los principales éxitos en plataformas de visualización como Twitch y Youtube. ",
+        "assets" : "../img/productos/friday13.png"
+    },
+    {
+        "nombre": "PS5 Spiderman: Miles Morales",
+        "marca": "Playstation",
+        "id": 3,
+        "precio": 49.99,
+        "descripcion": "Marvel's Spider-Man: Miles Morales es un videojuego de acción y aventuras desarrollado por Insomniac Games y publicado por Sony Interactive Entertainment para PlayStation 4 y PlayStation 5. Está basado en el superhéroe de Marvel Comics Miles Morales. Es el segundo juego de la serie Marvel's Spider-Man, después de Marvel's Spider-Man (2018).",
+        "assets" : "./img/productos/spidermanps5.png"
     },
     {
         "nombre": "Xbox Series S",
@@ -32,11 +40,124 @@
         "assets" : "../img/productos/xboxs.png"
     },
     {
-        "nombre": "PS4 Friday the 13th",
+        "nombre": "PS4 Beyond: Two Souls",
         "marca": "Playstation",
-        "id": 2,
+        "id": 5,
+        "precio": 29.99,
+        "descripcion": "Jodie Holmes (Elliot Page) nació con un don especial: ha vivido toda su vida vinculada a una entidad llamada Aiden, un ser inmaterial con poderes telequinéticos que además hizo que Jodie tuviera contactos con el mundo de los espíritus. Desde que nació, esto le ha supuesto tener una vida muy diferente a la de cualquier otra persona. La historia narra la vida de Jodie en tres etapas: infancia, adolescencia y juventud.nota 1​Durante la primera observamos a Jodie en la base científica del doctor Nathan Dawkins (Willem Dafoe), en la segunda los problemas que le ocasiona a Jodie para integrarse y vivir una vida normal, y en la última su ingreso en las fuerzas especiales de la CIA, que valora el potencial que posee Jodie al controlar una entidad, y su posterior deserción lo que la lleva a ser perseguida por todas las fuerzas policiales del país.",
+        "assets" : "../img/productos/beyond.png"
+    },
+    {
+        "nombre": "Xbox Series Controller",
+        "marca": "Xbox",
+        "id": 6,
         "precio": 59.99,
-        "descripcion": "Friday the 13th: The Game es un videojuego cooperativo para PS4 basado en las películas de la saga cinematográfica de Viernes 13. Ha sido desarrollado gracias a una campaña de financiación de Kickstarter y combina acción estándar con multijugador. El título goza de gran popularidad y una fuerte comunidad online, siendo uno de los principales éxitos en plataformas de visualización como Twitch y Youtube. ",
-        "assets" : "../img/productos/friday13.png"
+        "descripcion": "Experimenta la comodidad mejorada y la sensación del nuevo control inalámbrico Xbox, con un diseño más elegante y aerodinámico, y una textura antiderrapante. Disfruta de la asignación personalizada de botones y de un rango inalámbrico que es casi el doble. Con el conector para auriculares estéreo de 3,5 mm, puedes conectar directamente cualquier tipo de auriculares compatibles. Y, gracias a la tecnología Bluetooth®, juega tus títulos favoritos en computadoras y tabletas con Windows 10*.",
+        "assets" : "../img/productos/xboxcontrol.png"
+    },
+    {
+        "nombre": "PS4 undertale",
+        "marca": "Playstation",
+        "id": 7,
+        "precio": 19.99,
+        "descripcion": "Welcome to UNDERTALE. In this RPG, you control a human who falls underground into the world of monsters. Now you must find your way out... or stay trapped forever.",
+        "assets" : "../img/productos/undertale.png"
+    },
+    {
+        "nombre": "MONITOR LED 23.8' STRIX 240hz 1ms",
+        "marca": "Asus",
+        "id": 8,
+        "precio": 599.99,
+        "descripcion": "Monitor de juegos ROG Strix XG258Q: FHD de 25 pulgadas (visible a 24.5 pulgadas) (1920x1080), nativo de 240Hz, 1 ms, compatible con G SYNC, sincronización adaptativa, Asus Aura RGB: <br> Monitor de juegos Full HD de 24.5 pulgadas con una frecuencia de actualización nativa de 240Hz para juegos fluidos <br> Certificado como compatible con G SYNC, que ofrece una experiencia de juego sin interrupciones y sin desgarros al habilitar VRR (frecuencia de actualización variable) de forma predeterminada. <br> Tiempo de respuesta ultrarrápido de 1 ms y sincronización adaptativa para eliminar el desenfoque de movimiento y el desgarro para un juego súper suave <br>Los monitores de juegos ROG Strix XG Series cuentan con iluminación ASUS Aura RGB en la parte posterior y una proyección de firma de luz personalizable para una estética inspirada en los juegos <br> Montaje en pared VESA para ahorrar espacio en el escritorio, más soportes diseñados ergonómicamente con inclinación total, giro, pivote y ajuste de altura",
+        "assets" : "../img/productos/rog-monitor.png"
+    },
+    {
+        "nombre": "Corsair VOID Wireless Dolby 7.1 RGB Gaming",
+        "marca": "Corsair",
+        "id": 9,
+        "precio": 129.99,
+        "descripcion": "Escucha todo, desde el paso más ligero hasta la explosión más asombrosa gracias a los controladores de audio de neodimio de alta densidad de 1.969 in de alta densidad con un rango de frecuencia ampliado de 20hz-30, 000Hz. <br> Construido para una comodidad duradera a través de largas sesiones de juego con tejido de malla de microfibra transpirable y almohadillas de espuma viscoelástica. <br> Conéctese de forma inalámbrica a su PC o PS4 mediante la conexión inalámbrica de 2,4 GHz de baja latencia con el adaptador USB incluido. <br> Un micrófono omnidireccional recoge tu voz con una claridad excepcional, con una función de silencio abatible y un indicador de silencio LED integrado. <br> Construido para durar a través de años de juego con construcción duradera y yugos de aluminio.",
+        "assets" : "../img/productos/corsair-headset.png"
+    },
+    {
+        "nombre": "ROG Rapture GT-AC5300 | Netzwerk",
+        "marca": "Asus",
+        "id": 10,
+        "precio": 299.99,
+        "descripcion": "GT-AC5300 Tri band WiFi Gaming Router: el primer enrutador Wi-Fi de 10 Gigabits del mundo con procesador de cuatro núcleos, puerto de juegos 2.5G, banda DFS, WTFast, QoS adaptable, AiMesh para sistema wifi de malla y seguridad de red AiProtection",
+        "assets" : "../img/productos/rog-router.png"
+    },
+    {
+        "nombre": "PS5 DualSense",
+        "marca": "Playstation",
+        "id": 11,
+        "precio": 59.99,
+        "descripcion": "Con el nuevo control inalámbrico Sony DualSense para PlayStation 5 vas a poder tener una experiencia de juego más intensa e inmersiva. El innovador control de PS5 cuenta con respuesta háptica y efectos de gatillo dinámicos. Además, incluye un micrófono integrado y el nuevo botón crear, todo en un diseño cómodo e icónico. El nuevo control de Sony mantiene lo mejor del Dualshock 4 y suma muchas más sensaciones de juego. El DualSense combina mejoras en la autonomía de la batería con un dispositivo con un peso más liviano.",
+        "assets" : "../img/productos/dualsense.png"
+    },
+    {
+        "nombre": "Mouse Razer Lazerhead RGB",
+        "marca": "Razer",
+        "id": 12,
+        "precio": 99.99,
+        "descripcion": "Para trabajar desde casa con la computadora o aprovechar los momentos de ocio, necesitas comodidad y facilidad de movimiento. Con tu Razer Essential encontrás eso que buscás en un solo aparato con la mejor tecnología. <br> Adaptado a tus movimientos <br> El mouse de juego te ofrecerá la posibilidad marcar la diferencia y sacar ventajas en tus partidas. Su conectividad y sensor suave ayudará a que te desplaces rápido por la pantalla. <br> La funcionalidad al alcance de tu mano <br> El sistema de detección de movimiento óptico te permitirá mover el cursor de una manera más precisa y sensible que en los sistemas tradicionales. Con sus 5 botones podrás tener mayor control e independencia para ejecutar.",
+        "assets" : "../img/productos/mouse-razer.png"
+    },
+    {
+        "nombre": "Teclado Rog claymore rgb",
+        "marca": "Xbox",
+        "id": 13,
+        "precio": 399.99,
+        "descripcion": "La consola Xbox Series S es la consola más rápida y potente de la historia. Experimentá la velocidad y el rendimiento de la próxima generación de juegos con Xbox Velocity Architecture, impulsada por un disco SSD personalizado y software integrado.",
+        "assets" : "../img/productos/rog-teclado.png"
+    },
+    {
+        "nombre": "Xbox Series S",
+        "marca": "Xbox",
+        "id": 14,
+        "precio": 299.99,
+        "descripcion": "La consola Xbox Series S es la consola más rápida y potente de la historia. Experimentá la velocidad y el rendimiento de la próxima generación de juegos con Xbox Velocity Architecture, impulsada por un disco SSD personalizado y software integrado.",
+        "assets" : "../img/productos/xboxs.png"
+    },
+    {
+        "nombre": "Xbox Series S",
+        "marca": "Xbox",
+        "id": 15,
+        "precio": 299.99,
+        "descripcion": "La consola Xbox Series S es la consola más rápida y potente de la historia. Experimentá la velocidad y el rendimiento de la próxima generación de juegos con Xbox Velocity Architecture, impulsada por un disco SSD personalizado y software integrado.",
+        "assets" : "../img/productos/xboxs.png"
+    },
+    {
+        "nombre": "Xbox Series S",
+        "marca": "Xbox",
+        "id": 16,
+        "precio": 299.99,
+        "descripcion": "La consola Xbox Series S es la consola más rápida y potente de la historia. Experimentá la velocidad y el rendimiento de la próxima generación de juegos con Xbox Velocity Architecture, impulsada por un disco SSD personalizado y software integrado.",
+        "assets" : "../img/productos/xboxs.png"
+    },
+    {
+        "nombre": "Xbox Series S",
+        "marca": "Xbox",
+        "id": 17,
+        "precio": 299.99,
+        "descripcion": "La consola Xbox Series S es la consola más rápida y potente de la historia. Experimentá la velocidad y el rendimiento de la próxima generación de juegos con Xbox Velocity Architecture, impulsada por un disco SSD personalizado y software integrado.",
+        "assets" : "../img/productos/xboxs.png"
+    },
+    {
+        "nombre": "Xbox Series S",
+        "marca": "Xbox",
+        "id": 18,
+        "precio": 299.99,
+        "descripcion": "La consola Xbox Series S es la consola más rápida y potente de la historia. Experimentá la velocidad y el rendimiento de la próxima generación de juegos con Xbox Velocity Architecture, impulsada por un disco SSD personalizado y software integrado.",
+        "assets" : "../img/productos/xboxs.png"
+    },
+    {
+        "nombre": "Xbox Series S",
+        "marca": "Xbox",
+        "id": 19,
+        "precio": 299.99,
+        "descripcion": "La consola Xbox Series S es la consola más rápida y potente de la historia. Experimentá la velocidad y el rendimiento de la próxima generación de juegos con Xbox Velocity Architecture, impulsada por un disco SSD personalizado y software integrado.",
+        "assets" : "../img/productos/xboxs.png"
     }
+
 ]
