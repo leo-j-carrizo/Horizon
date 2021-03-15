@@ -1,0 +1,93 @@
+#carritoMini{
+    background-color:$gray-variant2;
+    width: 250px;
+    position: absolute;
+    right: 0px;
+    top: 80px;
+    z-index: 2;
+    visibility: hidden;
+    transition: 0.2s;
+}
+.carritoMini_categoria{
+    display: flex;
+    height: 45px;
+    align-items: center;
+    border-bottom: 2px solid $secondary-color;
+    
+    p{
+        margin: 0;
+        width: 83.33px;
+        text-align: center;
+        font-family: 'goodtime';
+        font-size: 0.85rem;
+        font-weight: 100;
+    }
+    
+}
+.carritoMini_contenido{
+    
+    margin-bottom: 5px;
+    .carritoMini_contenido_producto{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    border-bottom: 2px solid $secondary-color;
+    padding: 10px 0;
+    div{
+        display: flex;
+        width: 83.33px;
+        max-height: 83.33px;
+        justify-content: center;
+        img{
+            max-width: 83.33px;
+        max-height: 83.33px;
+        }
+        
+    }
+    p{
+        width: 83.33px;
+        text-align: center;
+        margin: 0;
+    }
+    .carritoMini_contenido_precio{
+        font-family: 'poppins';
+
+    }
+}
+
+}
+.carritoMini_buttons{
+    
+    button{   
+        color:$primary-color;
+        padding: 10px 0;
+        width: 240px;
+        background-color: $secondary-color;
+        border: none;
+        margin: 0px 5px 5px 5px;
+        text-transform: uppercase;
+        font-family: 'goodtime';
+        font-size: 0.9rem;
+    }
+}
+
+.alerta_carrito{
+    background-color: $gray-variant2;
+    color: $secondary-color;
+    font-family: 'goodtime';
+    text-align: center;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 10;
+    position: fixed;
+    visibility: hidden;
+    p{
+        color: $secondary-color;
+        font-family: 'goodtime';
+        text-align: center;
+        margin: 0;
+    }
+}

@@ -1,7 +1,7 @@
 header{
     display:flex;
     height: 80px;
-    width:100vw;
+    width:100%;
 }
 .titleBx{
     background-color: $secondary-color;
@@ -91,6 +91,8 @@ header{
         height: 25px;
     }
 }
+
+
 @media (max-width: 844px){
     header{
         flex-direction: column;
@@ -128,3 +130,5 @@ header{
         
     }
 }
+
+

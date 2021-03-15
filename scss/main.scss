@@ -1,3 +1,4 @@
+/*No alterar el orden!*/
 @import "general";/*siempre primero*/
 @import "index";
 @import "header";
@@ -11,4 +12,5 @@
 @import "productos";
 @import "login";
 @import "detalles-productos";
-
+@import "carritoMini-style";
+@import "carrito";
