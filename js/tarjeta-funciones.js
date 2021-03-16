@@ -27,11 +27,11 @@ botonCompra.click(
             if(baseProductos.responseJSON[i].id == infoId){
                 contenedorCarrito.append(
                     `<div class="carritoMini_contenido_producto">
-                        <div>
-                        <img src="${baseProductos.responseJSON[i].assets}" alt="">
-                        </div>
-                        <p>${baseProductos.responseJSON[i].nombre}</p>
-                        <p class="carritoMini_contenido_precio">$${baseProductos.responseJSON[i].precio}</p>
+                    <div>
+                    <img src="${baseProductos.responseJSON[i].assets}" onerror="this.src='${baseProductos.responseJSON[i].assets2}'" alt="${baseProductos.responseJSON[i].nombre}">
+                    </div>
+                    <p>${baseProductos.responseJSON[i].nombre}</p>
+                    <p class="carritoMini_contenido_precio">$${baseProductos.responseJSON[i].precio}</p>
                     </div>`
                 )
                 break         
