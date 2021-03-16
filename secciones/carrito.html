@@ -58,18 +58,42 @@
         </div>
     </nav>
     <main>
-        <section>
+        <section class="carrito-intro">
             <h1>Finaliza tu compra</h1>
             <p>Verifica que los datos sean correctos y continua hacia el procesamiento de tu pago (Proximamente!)</p>
         </section>
-        <section class="catalogue">
-            <div class="product_box_list" >
-                
-    
-            </div>
+        <section class="catalogo">
+            <table class="product-display">
+                <tr>
+                    <th>Imagen</th>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th>Subtotal</th>
+                    <th></th>
+                </tr>
+                <!-- <tr>
+                    <td class="img-col">
+                        <div><img src="../img/productos/ps5.png" alt="ps5"></div>
+                    </td>
+                    <td class="name-col">PS5 Blueray Edition</td>
+                    <td class="price-col">$499.99</td>
+                    <td class="amount-col">
+                        <button class="botonResta">-</button>
+                        <input type="number" min="1" value="1">
+                        <button class="botonSuma">+</button>
+                    </td>
+                    <td class="subtotal-col">
+                        $499.99
+                    </td>
+                    <td class="delet-col">
+                        <button>X</button>
+                    </td>
+                </tr> -->
+            </table>
         </section>
         <section class="pay-info">
-
+            
         </section>
         
     </main>
@@ -146,7 +170,9 @@
             </div>
         </div>
     </footer>
-    <script src="./js/carrito.js"></script>
-<script src="./js/pedidos.js"></script>
+    <!-- Scripts propios -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/variable.js"></script>
+    <script src="../js/carrito.js"></script>
 </body>
 </html>

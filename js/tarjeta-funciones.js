@@ -1,49 +1,3 @@
-//variables
-let almacenamiento = JSON.parse(localStorage.getItem('productosAlmacenados'));
-let botonCompra = $(".price").next();
-let tarjeta = $(".card");
-let carritoMini = $("#carritoMini");
-let alertaCarrito = $(".alerta_carrito");
-let carritoIcon= $(".cartBx");
-const contenedorCarrito = $(".carritoMini_contenido");
-let vaciarCarrito = $(".vaciar-carrito")
-//Json con informacion de los productos
-let baseProductos = $.get("https://joako20.github.io/Horizon/json/productos.json",function(){
-    almacenamiento.forEach(arrayElements);
-});
-
-
-
-//Esta funcion lee los datos almacenados sobre que producto se agrego al carrito para que al recargar la pagina los productos sigan ahi
-function arrayElements(element,index,array){
-    for(var i = 0; element < baseProductos.responseJSON.length;i++){
-        if(baseProductos.responseJSON[i].id == element){
-            contenedorCarrito.append(
-                `<div class="carritoMini_contenido_producto">
-                    <div>
-                    <img src="${baseProductos.responseJSON[i].assets}" alt="">
-                    </div>
-                    <p>${baseProductos.responseJSON[i].nombre}</p>
-                    <p class="carritoMini_contenido_precio">$${baseProductos.responseJSON[i].precio}</p>
-                </div>`
-            );
-            break         
-        };
-    };
-};
-
-//Crea hover de la vista previa del carrito pasando el mouse sobre el icono
-$( "#carritoMini,.cartBx" ).hover(
-    ()=>{
-        carritoMini.css("visibility","visible");
-    },
-    ()=>{
-        carritoMini.css("visibility","hidden");
-    }
-);
-
-
-
 //Establece el id del producto seleccionado al presionar LA TARJETA en el localstorage, y redigira a la pagina que se encargara de comparar ese id en el json para llenar el template con la informacion del producto clickeado
 //Evitar que la funcion llegue al boton de compra para usarlo luego
 tarjeta.click(
@@ -105,12 +59,7 @@ function comprobar(){
     }
 } 
 
-vaciarCarrito.click(
-    ()=>{
-        localStorage.removeItem('productosAlmacenados');
-        contenedorCarrito.html("");
-    }
-)
+
 
 
 

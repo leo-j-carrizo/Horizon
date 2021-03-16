@@ -1451,3 +1451,75 @@ header {
     font-family: 'goodtime';
     text-align: center;
     margin: 0; }
+
+.carrito-intro {
+  text-align: left;
+  width: 1300px;
+  margin: 20px 0; }
+  .carrito-intro h1 {
+    font-family: 'goodtime';
+    color: #66B933; }
+  .carrito-intro p {
+    color: gray; }
+
+.catalogo {
+  width: 1300px;
+  margin: 0; }
+
+.product-display {
+  width: 1300px; }
+  .product-display tr {
+    border-bottom: 1px solid #66B933; }
+    .product-display tr th {
+      color: #66B933;
+      font-family: 'goodtime';
+      font-size: 1rem;
+      text-align: center; }
+  .product-display .img-col {
+    width: 10%;
+    padding: 20px; }
+    .product-display .img-col div {
+      height: 120px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .product-display .img-col div img {
+        height: 100%; }
+  .product-display .name-col {
+    width: 50%;
+    font-size: 1.2rem;
+    text-align: center; }
+  .product-display .price-col {
+    width: 10%;
+    text-align: center; }
+  .product-display .amount-col {
+    width: 10%;
+    text-align: center; }
+    .product-display .amount-col input {
+      width: 35px;
+      margin-left: 20px;
+      background-color: transparent;
+      color: white;
+      border: none; }
+    .product-display .amount-col button {
+      background-color: transparent;
+      color: #66B933;
+      font-size: 1.5rem;
+      border: none; }
+  .product-display .subtotal-col {
+    text-align: center; }
+  .product-display .delet-col button {
+    background-color: #66B933;
+    border-radius: 50%;
+    border: none;
+    font-family: 'goodtime';
+    font-weight: 1000; }
+  .product-display input:focus {
+    outline: none; }
+  .product-display button:focus {
+    outline: none; }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
