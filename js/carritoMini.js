@@ -13,7 +13,7 @@ function arrayElements(element,index,array){
             contenedorCarrito.append(
                 `<div class="carritoMini_contenido_producto">
                     <div>
-                    <img src="${baseProductos.responseJSON[i].assets}" alt="">
+                    <img src="${baseProductos.responseJSON[i].assets}" onerror="this.src='${baseProductos.responseJSON[i].assets2}' alt="">
                     </div>
                     <p>${baseProductos.responseJSON[i].nombre}</p>
                     <p class="carritoMini_contenido_precio">$${baseProductos.responseJSON[i].precio}</p>

@@ -5,7 +5,8 @@
         "id": 0,
         "precio": 499.99,
         "descripcion": "Con tu consola PlayStation 5 tendrás entretenimiento asegurado todos los días. Su tecnología fue creada para poner nuevos retos tanto a jugadores principiantes como expertos. Calidad de otro nivel Vas a poder reproducir música, ver tus películas y series favoritas a través de las aplicaciones descargables.Adaptada a tus necesidades Guardá tus apps, fotos, videos y mucho más en el disco duro, que cuenta con una capacidad de 825 GB. Al contar con un procesador de 8 núcleos y uno gráfico, brinda una experiencia dinámica, respuestas ágiles, y transiciones fluidas de imágenes en alta definición. Por otro lado, tiene puerto USB y salida HDMI, que permiten conectar accesorios y cargar la batería de tu control mientras jugás.",
-        "assets" : "../img/productos/ps5.png"
+        "assets" : "../img/productos/ps5.png",
+        "assets2" : "./img/productos/ps5.png"
     },
     {
         "nombre": "Xbox Series X",
@@ -13,7 +14,8 @@
         "id": 1,
         "precio": 499.99,
         "descripcion": "La consola Xbox Series X es la consola más rápida y potente de la historia. Experimentá la velocidad y el rendimiento de la próxima generación de juegos con Xbox Velocity Architecture, impulsada por un disco SSD personalizado y software integrado.",
-        "assets" : "../img/productos/xbox.png"
+        "assets" : "../img/productos/xbox.png",
+        "assets2" : "./img/productos/xbox.png"
     },
     {
         "nombre": "PS4 Friday the 13th",
@@ -21,7 +23,8 @@
         "id": 2,
         "precio": 59.99,
         "descripcion": "Friday the 13th: The Game es un videojuego cooperativo para PS4 basado en las películas de la saga cinematográfica de Viernes 13. Ha sido desarrollado gracias a una campaña de financiación de Kickstarter y combina acción estándar con multijugador. El título goza de gran popularidad y una fuerte comunidad online, siendo uno de los principales éxitos en plataformas de visualización como Twitch y Youtube. ",
-        "assets" : "../img/productos/friday13.png"
+        "assets" : "../img/productos/friday13.png",
+        "assets2" : "./img/productos/friday13.png"
     },
     {
         "nombre": "PS5 Spiderman: Miles Morales",
@@ -29,7 +32,8 @@
         "id": 3,
         "precio": 49.99,
         "descripcion": "Marvel's Spider-Man: Miles Morales es un videojuego de acción y aventuras desarrollado por Insomniac Games y publicado por Sony Interactive Entertainment para PlayStation 4 y PlayStation 5. Está basado en el superhéroe de Marvel Comics Miles Morales. Es el segundo juego de la serie Marvel's Spider-Man, después de Marvel's Spider-Man (2018).",
-        "assets" : "../img/productos/spidermanps5.png"
+        "assets" : "../img/productos/spidermanps5.png",
+        "assets2" : "./img/productos/spidermanps5.png"
     },
     {
         "nombre": "Xbox Series S",
@@ -37,7 +41,8 @@
         "id": 4,
         "precio": 299.99,
         "descripcion": "La consola Xbox Series S es la consola más rápida y potente de la historia. Experimentá la velocidad y el rendimiento de la próxima generación de juegos con Xbox Velocity Architecture, impulsada por un disco SSD personalizado y software integrado.",
-        "assets" : "../img/productos/xboxs.png"
+        "assets" : "../img/productos/xboxs.png",
+        "assets2" : "./img/productos/xboxs.png"
     },
     {
         "nombre": "PS4 Beyond: Two Souls",
@@ -45,7 +50,8 @@
         "id": 5,
         "precio": 29.99,
         "descripcion": "Jodie Holmes (Elliot Page) nació con un don especial: ha vivido toda su vida vinculada a una entidad llamada Aiden, un ser inmaterial con poderes telequinéticos que además hizo que Jodie tuviera contactos con el mundo de los espíritus. Desde que nació, esto le ha supuesto tener una vida muy diferente a la de cualquier otra persona. La historia narra la vida de Jodie en tres etapas: infancia, adolescencia y juventud.nota 1​Durante la primera observamos a Jodie en la base científica del doctor Nathan Dawkins (Willem Dafoe), en la segunda los problemas que le ocasiona a Jodie para integrarse y vivir una vida normal, y en la última su ingreso en las fuerzas especiales de la CIA, que valora el potencial que posee Jodie al controlar una entidad, y su posterior deserción lo que la lleva a ser perseguida por todas las fuerzas policiales del país.",
-        "assets" : "../img/productos/beyond.png"
+        "assets" : "../img/productos/beyond.png",
+        "assets2" : "./img/productos/beyond.png"
     },
     {
         "nombre": "Xbox Series Controller",
@@ -53,7 +59,8 @@
         "id": 6,
         "precio": 59.99,
         "descripcion": "Experimenta la comodidad mejorada y la sensación del nuevo control inalámbrico Xbox, con un diseño más elegante y aerodinámico, y una textura antiderrapante. Disfruta de la asignación personalizada de botones y de un rango inalámbrico que es casi el doble. Con el conector para auriculares estéreo de 3,5 mm, puedes conectar directamente cualquier tipo de auriculares compatibles. Y, gracias a la tecnología Bluetooth®, juega tus títulos favoritos en computadoras y tabletas con Windows 10*.",
-        "assets" : "../img/productos/xboxcontrol.png"
+        "assets" : "../img/productos/xboxcontrol.png",
+        "assets2" : "./img/productos/xboxcontrol.png"
     },
     {
         "nombre": "PS4 undertale",
@@ -61,7 +68,8 @@
         "id": 7,
         "precio": 19.99,
         "descripcion": "Welcome to UNDERTALE. In this RPG, you control a human who falls underground into the world of monsters. Now you must find your way out... or stay trapped forever.",
-        "assets" : "../img/productos/undertale.png"
+        "assets" : "../img/productos/undertale.png",
+        "assets2" : "./img/productos/undertale.png"
     },
     {
         "nombre": "MONITOR LED 23.8' STRIX 240hz 1ms",
@@ -69,7 +77,8 @@
         "id": 8,
         "precio": 599.99,
         "descripcion": "Monitor de juegos ROG Strix XG258Q: FHD de 25 pulgadas (visible a 24.5 pulgadas) (1920x1080), nativo de 240Hz, 1 ms, compatible con G SYNC, sincronización adaptativa, Asus Aura RGB: <br> Monitor de juegos Full HD de 24.5 pulgadas con una frecuencia de actualización nativa de 240Hz para juegos fluidos <br> Certificado como compatible con G SYNC, que ofrece una experiencia de juego sin interrupciones y sin desgarros al habilitar VRR (frecuencia de actualización variable) de forma predeterminada. <br> Tiempo de respuesta ultrarrápido de 1 ms y sincronización adaptativa para eliminar el desenfoque de movimiento y el desgarro para un juego súper suave <br>Los monitores de juegos ROG Strix XG Series cuentan con iluminación ASUS Aura RGB en la parte posterior y una proyección de firma de luz personalizable para una estética inspirada en los juegos <br> Montaje en pared VESA para ahorrar espacio en el escritorio, más soportes diseñados ergonómicamente con inclinación total, giro, pivote y ajuste de altura",
-        "assets" : "../img/productos/rog-monitor.png"
+        "assets" : "../img/productos/rog-monitor.png",
+        "assets2" : "./img/productos/rog-monitor.png"
     },
     {
         "nombre": "Corsair VOID Wireless Dolby 7.1 RGB Gaming",
@@ -77,7 +86,8 @@
         "id": 9,
         "precio": 129.99,
         "descripcion": "Escucha todo, desde el paso más ligero hasta la explosión más asombrosa gracias a los controladores de audio de neodimio de alta densidad de 1.969 in de alta densidad con un rango de frecuencia ampliado de 20hz-30, 000Hz. <br> Construido para una comodidad duradera a través de largas sesiones de juego con tejido de malla de microfibra transpirable y almohadillas de espuma viscoelástica. <br> Conéctese de forma inalámbrica a su PC o PS4 mediante la conexión inalámbrica de 2,4 GHz de baja latencia con el adaptador USB incluido. <br> Un micrófono omnidireccional recoge tu voz con una claridad excepcional, con una función de silencio abatible y un indicador de silencio LED integrado. <br> Construido para durar a través de años de juego con construcción duradera y yugos de aluminio.",
-        "assets" : "../img/productos/corsair-headset.png"
+        "assets" : "../img/productos/corsair-headset.png",
+        "assets2" : "./img/productos/corsair-headset.png"
     },
     {
         "nombre": "ROG Rapture GT-AC5300 | Netzwerk",
@@ -85,7 +95,8 @@
         "id": 10,
         "precio": 299.99,
         "descripcion": "GT-AC5300 Tri band WiFi Gaming Router: el primer enrutador Wi-Fi de 10 Gigabits del mundo con procesador de cuatro núcleos, puerto de juegos 2.5G, banda DFS, WTFast, QoS adaptable, AiMesh para sistema wifi de malla y seguridad de red AiProtection",
-        "assets" : "../img/productos/rog-router.png"
+        "assets" : "../img/productos/rog-router.png",
+        "assets2" : "./img/productos/rog-router.png"
     },
     {
         "nombre": "PS5 DualSense",
@@ -93,7 +104,8 @@
         "id": 11,
         "precio": 59.99,
         "descripcion": "Con el nuevo control inalámbrico Sony DualSense para PlayStation 5 vas a poder tener una experiencia de juego más intensa e inmersiva. El innovador control de PS5 cuenta con respuesta háptica y efectos de gatillo dinámicos. Además, incluye un micrófono integrado y el nuevo botón crear, todo en un diseño cómodo e icónico. El nuevo control de Sony mantiene lo mejor del Dualshock 4 y suma muchas más sensaciones de juego. El DualSense combina mejoras en la autonomía de la batería con un dispositivo con un peso más liviano.",
-        "assets" : "../img/productos/dualsense.png"
+        "assets" : "../img/productos/dualsense.png",
+        "assets2" : "./img/productos/dualsense.png"
     },
     {
         "nombre": "Mouse Razer Lazerhead RGB",
@@ -101,7 +113,8 @@
         "id": 12,
         "precio": 99.99,
         "descripcion": "Para trabajar desde casa con la computadora o aprovechar los momentos de ocio, necesitas comodidad y facilidad de movimiento. Con tu Razer Essential encontrás eso que buscás en un solo aparato con la mejor tecnología. <br> Adaptado a tus movimientos <br> El mouse de juego te ofrecerá la posibilidad marcar la diferencia y sacar ventajas en tus partidas. Su conectividad y sensor suave ayudará a que te desplaces rápido por la pantalla. <br> La funcionalidad al alcance de tu mano <br> El sistema de detección de movimiento óptico te permitirá mover el cursor de una manera más precisa y sensible que en los sistemas tradicionales. Con sus 5 botones podrás tener mayor control e independencia para ejecutar.",
-        "assets" : "../img/productos/mouse-razer.png"
+        "assets" : "../img/productos/mouse-razer.png",
+        "assets2" : "./img/productos/mouse-razer.png"
     },
     {
         "nombre": "Teclado Rog claymore rgb",
@@ -109,7 +122,8 @@
         "id": 13,
         "precio": 399.99,
         "descripcion": "Interruptores de llave mecánicos Cherry MX RGB de fabricación alemana que brindan una sensación mecánica satisfactoria con una actuación óptima: la elección de jugadores y entusiastas profesionales. <br> Insignia iluminada personalizable: Presume de tu orgullo ROG o muestra tu estilo con una insignia personal o de equipo. <br> Teclas multimedia dedicadas y rueda de volumen colocada a la izquierda para un control de audio instantáneo en el juego, un puerto USB para una fácil conexión y un reposamuñecas desmontable de tacto suave. <br> Teclas retroiluminadas individualmente y brillo vibrante con tecnología de iluminación Aura Sync RGB. <br> Asigne macros sobre la marcha a nuestras teclas totalmente programables, ajuste la configuración con el software Armory II mejorado y almacene perfiles en la memoria integrada del teclado.",
-        "assets" : "../img/productos/rog-teclado.png"
+        "assets" : "../img/productos/rog-teclado.png",
+        "assets2" : "./img/productos/rog-teclado.png"
     },
     {
         "nombre": "Mouse pad Razer firefly chroma hard",
@@ -117,7 +131,8 @@
         "id": 14,
         "precio": 49.99,
         "descripcion": "Razer Firefly Hard V2 RGB Gaming Mouse Pad: Customizable Chroma Lighting - Built-in Cable Management - Balanced Control & Speed - Non-Slip Rubber Base",
-        "assets" : "../img/productos/razer-mousepad.png"
+        "assets" : "../img/productos/razer-mousepad.png",
+        "assets2" : "./img/productos/razer-mousepad.png"
     },
     {
         "nombre": "Msi Monitor Gamer MAG24C 24'' 144HZ 1MS",
@@ -125,7 +140,8 @@
         "id": 15,
         "precio": 299.99,
         "descripcion": "Optix G24C tiene al menos 20% más cobertura de la gama de colores, lo que ofrece una imagen más real y detallada. <br> Tasa de curvatura R1800 <br> Comparada con las tasas de curvatura R4000 o R3000, la tasa de curvatura <br> R1800 es más confortable para el ojo humano y más adecuada para toda situación de uso.",
-        "assets" : "../img/productos/msi-monitor.png"
+        "assets" : "../img/productos/msi-monitor.png",
+        "assets2" : "./img/productos/msi-monitor.png"
     },
     {
         "nombre": "Mouse Corsair Harpoon RGB PRO",
@@ -133,7 +149,8 @@
         "id": 16,
         "precio": 59.99,
         "descripcion": "El mouse HARPOON CORSAIR RGB ha sido diseñado para ofrecerle el máximo rendimiento. Introduce un sensor de juego óptico de 6000 DPI regulable desde 400 DPi con seguimiento avanzado para que pueda disfrutar de un control de precisión. Su peso ligero y su diseño estilizado han sido diseñados para facilitar los movimientos más rápidos.",
-        "assets" : "../img/productos/corsair-mouse.png"
+        "assets" : "../img/productos/corsair-mouse.png",
+        "assets2" : "./img/productos/corsair-mouse.png"
     },
     {
         "nombre": "Msi Mousepad sistorm gaming hard",
@@ -141,7 +158,8 @@
         "id": 17,
         "precio": 19.99,
         "descripcion": "Mousepad Garantia 12 meses",
-        "assets" : "../img/productos/msi-mousepad.png"
+        "assets" : "../img/productos/msi-mousepad.png",
+        "assets2" : "./img/productos/msi-mousepad.png"
     },
     {
         "nombre": "Razer kraken v2 pro green",
@@ -149,7 +167,8 @@
         "id": 18,
         "precio": 69.99,
         "descripcion": "¡Experimentá la adrenalina de sumergirte en la escena de otra manera! Tener auriculares específicos para jugar cambia completamente tu experiencia en cada partida. Con los Razer Kraken Pro V2 no te perdés ningún detalle y escuchás el audio tal y como fue diseñado por los creadores.",
-        "assets" : "../img/productos/razer-headset.png"
+        "assets" : "../img/productos/razer-headset.png",
+        "assets2" : "./img/productos/razer-headset.png"
     },
     {
         "nombre": "PS4 dualshock",
@@ -157,7 +176,8 @@
         "id": 19,
         "precio": 49.99,
         "descripcion": "Control preciso <br> Este mando combina funciones revolucionarias mientras conserva precisión, comodidad y exactitud en cada movimiento. <br> Diseño inteligente <br> Gracias a su ergonomía especialmente pensada para la posición de tu mano, podés pasar horas jugando con total confort.",
-        "assets" : "../img/productos/dualshock4.png"
+        "assets" : "../img/productos/dualshock4.png",
+        "assets2" : "./img/productos/dualshock4.png"
     },
     {
         "nombre": "Razer Blackwidow Chroma Stealth",
@@ -165,7 +185,8 @@
         "id": 20,
         "precio": 79.99,
         "descripcion": "JUEGO ABSOLUTO. ILUMINACIÓN INFINITA. <br> Este teclado no solo es potente, sino que lleva la personalización a otro nivel totalmente distinto. El teclado Razer Cynosa Chroma se ha diseñado para conseguir un rendimiento definitivo para juegos y permite personalizar hasta cada tecla individual con toda la gama de colores. <br> POWERED BY RAZER CHROMA™ <br> Incluye teclas retroiluminadas programables de manera individual y 16,8 millones de opciones de color. Elige entre los efectos de iluminación predeterminados o crea tu propia combinación de colores para disfrutar de una experiencia de juego totalmente a medida, fácil de configurar a través de Razer Synapse 3 (Beta).",
-        "assets" : "../img/productos/razer-teclado.png"
+        "assets" : "../img/productos/razer-teclado.png",
+        "assets2" : "./img/productos/razer-teclado.png"
     }
 
 ]
