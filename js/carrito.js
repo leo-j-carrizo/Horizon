@@ -118,6 +118,8 @@ let baseProductos = $.get("https://joako20.github.io/Horizon/json/productos.json
             
             subtotalInp.innerHTML=`$${multiInpt}`
 
+            totalWriter()
+
         }
     )
 
