@@ -11,15 +11,18 @@ let baseProductosDetalles = $.get("https://joako20.github.io/Horizon/json/produc
                     <img src="${baseProductosDetalles.responseJSON[i].assets}" alt="${baseProductosDetalles.responseJSON[i].nombre}">
                 </div>
                 <!-- resto info -->
+                <div class="info-container">
                     <h3>${baseProductosDetalles.responseJSON[i].nombre}</h3>
-                    <div class="all-info">
-                        <div>
+                    <div class="all-info" data-id="${baseProductosDetalles.responseJSON[i].id}">
+                        <div class="extra-texto">
                             <h4>${baseProductos.responseJSON[i].marca}</h4>
+                            <p>Mas de 125k usuarios lo califican de <span>EXCELENTE</span></p>
                         </div>
-                        <div>
-                            <h4>Precio: $${baseProductosDetalles.responseJSON[i].precio}</h4>
+                        <div class="extra-precio">
+                            <h4>Precio: $${baseProductosDetalles.responseJSON[i].precio} USD</h4>
                         </div>
-                        <div>
+                        <div class="extra-boton">
+                            
                             <a href="">Comprar ahora</a>
                         </div>
                     </div>
@@ -27,7 +30,7 @@ let baseProductosDetalles = $.get("https://joako20.github.io/Horizon/json/produc
                 </section>
                 
                 <section class="description-detalles">
-                    <h3>Acerca de: ${baseProductosDetalles.responseJSON[i].nombre}</h3>
+                    <h3>ACERCA DE: ${baseProductosDetalles.responseJSON[i].nombre}</h3>
                     <p>${baseProductosDetalles.responseJSON[i].descripcion}</p>
                 </section>
                 

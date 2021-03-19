@@ -2,8 +2,12 @@
     width: 1300px;
     height: 350px;
     margin: 20px 0;
-    background-color: gray;
+    
     display: flex;
+    h3{
+        color: $secondary-color;
+        font-family: 'goodtime';
+    }
 }
 
 .img-container{
@@ -12,7 +16,9 @@
     display: flex;
     justify-content: center;
     img{
+        width: 100%;
         height: 100%;
+        object-fit: contain;
     }
 }
 .info-container{
@@ -23,8 +29,13 @@
     }
 }
 .all-info{
-    background-color: green;
+    position: relative;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
     display: flex;
+    z-index: 1;
+    background: inherit;
+    overflow: hidden;
+    border-radius: 5px;
     div{
         margin: 20px;
         a{
@@ -36,11 +47,58 @@
             font-size: 0.9rem;
         }
     }
+    .extra-texto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h4{
+            font-family: 'goodtime';
+            margin: 0;
+        }
+        p{
+            margin: 0;
+            color: $tertiary-color;
+            span{
+                color: $secondary-color;
+            }
+        }
+    }
+    .extra-precio{
+        font-family: 'goodtime';
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h4{margin: 0;}
+    }
+    .extra-boton{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.all-info:before {
+    content: "";
+  position: absolute;
+  background: inherit;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, .15);
+  filter: blur(10px);
+  margin: -20px;
 }
 .description-detalles{
     width: 1300px;
     margin: 20px 0;
-    background-color: rebeccapurple;
+    background-color: $gray-variant2;
     padding: 20px;
-    
+    h3{
+        
+        font-family: 'goodtime';
+    }
+    p{
+        color:$tertiary-color;
+    }
 }
