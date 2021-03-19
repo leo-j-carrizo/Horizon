@@ -50,3 +50,10 @@ vaciarCarrito.click(
           localStorage.removeItem('totalProductosSumados');
     }
 )
+
+//Al presionar el boton procesar compra redirecciona al carrito(solo funciona con live server)
+botonProcesar.click(
+    function(){
+    
+    }
+)

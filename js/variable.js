@@ -12,3 +12,4 @@ let totalMonto = $(".total-monto");
 let divAlerta = $(".correcto");
 let divAlertaIncorrecto = $(".incorrecto");
 let infoSesionCaja = $(".logBx");
+let botonProcesar = $(".procesar-compra");
