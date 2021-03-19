@@ -64,7 +64,7 @@
         </section>
         <section class="catalogo">
             <table class="product-display">
-                <tr>
+                <tr class="product-display_head">
                     <th>Imagen</th>
                     <th>Nombre</th>
                     <th>Precio</th>
@@ -72,28 +72,22 @@
                     <th>Subtotal</th>
                     <th></th>
                 </tr>
-                <!-- <tr>
-                    <td class="img-col">
-                        <div><img src="../img/productos/ps5.png" alt="ps5"></div>
-                    </td>
-                    <td class="name-col">PS5 Blueray Edition</td>
-                    <td class="price-col">$499.99</td>
-                    <td class="amount-col">
-                        <button class="botonResta">-</button>
-                        <input type="number" min="1" value="1">
-                        <button class="botonSuma">+</button>
-                    </td>
-                    <td class="subtotal-col">
-                        $499.99
-                    </td>
-                    <td class="delet-col">
-                        <button>X</button>
-                    </td>
-                </tr> -->
+                <tr class="no-product"><td><h2>No hay productos en el carrito</h2></td></tr>
             </table>
         </section>
         <section class="pay-info">
-            
+            <div class="pay-info_continuar">
+                <button class="vaciar-carrito">Vaciar Carrito</button>
+                <button>Procesar pago</button>
+
+            </div>
+            <div class="pay-info_total">
+                <div class="pay-info_total_contenedor">
+                    <p class="total-extra">Impuestos: $0.00 </p>
+                    <p class="total-extra">Envio: $0.00 </p>
+                    <p class="total-monto">Total: $0</p>
+                </div>
+            </div>
         </section>
         
     </main>

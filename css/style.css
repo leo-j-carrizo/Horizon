@@ -46,6 +46,12 @@ a {
 a:hover {
   color: #66B933; }
 
+input:focus {
+  outline: none; }
+
+button:focus {
+  outline: none; }
+
 /*siempre primero*/
 /*carrusel*/
 .carousel {
@@ -1514,12 +1520,55 @@ header {
     border: none;
     font-family: 'goodtime';
     font-weight: 1000; }
-  .product-display input:focus {
-    outline: none; }
-  .product-display button:focus {
-    outline: none; }
+  .product-display .no-product {
+    width: 1300px; }
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0; }
+
+.pay-info {
+  width: 1300px;
+  margin-bottom: 30px;
+  background-color: transparent;
+  display: flex; }
+  .pay-info .pay-info_continuar {
+    background-color: transparent;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0; }
+    .pay-info .pay-info_continuar button {
+      font-family: 'goodtime';
+      background-color: #66B933;
+      border: none;
+      color: black;
+      padding: 10px;
+      border-radius: 5px; }
+    .pay-info .pay-info_continuar .vaciar-carrito {
+      margin-bottom: 20px; }
+  .pay-info .pay-info_total {
+    padding-top: 10px;
+    width: 70%;
+    background-color: #66B933;
+    color: black;
+    font-family: 'goodtime';
+    display: flex;
+    justify-content: flex-end; }
+    .pay-info .pay-info_total .pay-info_total_contenedor {
+      height: 100%;
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      position: relative; }
+      .pay-info .pay-info_total .pay-info_total_contenedor p {
+        margin-bottom: 10px;
+        font-size: 0.8rem; }
+      .pay-info .pay-info_total .pay-info_total_contenedor .total-monto {
+        margin: 0;
+        font-size: 2rem;
+        font-weight: 600;
+        justify-self: flex-end; }

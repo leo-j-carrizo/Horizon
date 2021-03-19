@@ -18,22 +18,36 @@ botonCompra.click(
         comprobar();
         
         let infoId = this.parentElement.parentElement.dataset.id
-        console.log(productosArray)
-        productosArray.push(infoId)
-        localStorage.setItem('productosAlmacenados',JSON.stringify(productosArray));
         
-        console.log(productosArray)
+        
+        
+        
         for(var i = 0; infoId < baseProductos.responseJSON.length;i++){
             if(baseProductos.responseJSON[i].id == infoId){
-                contenedorCarrito.append(
-                    `<div class="carritoMini_contenido_producto">
-                    <div>
-                    <img src="${baseProductos.responseJSON[i].assets}" onerror="this.src='${baseProductos.responseJSON[i].assets2}'" alt="${baseProductos.responseJSON[i].nombre}">
-                    </div>
-                    <p>${baseProductos.responseJSON[i].nombre}</p>
-                    <p class="carritoMini_contenido_precio">$${baseProductos.responseJSON[i].precio}</p>
-                    </div>`
-                )
+                if(productosArray.includes(infoId) == false){
+                    productosArray.push(infoId)
+                    localStorage.setItem('productosAlmacenados',JSON.stringify(productosArray));
+                    contenedorCarrito.append(
+                        `<div class="carritoMini_contenido_producto">
+                        <div>
+                        <img src="${baseProductos.responseJSON[i].assets}" onerror="this.src='${baseProductos.responseJSON[i].assets2}'" alt="${baseProductos.responseJSON[i].nombre}">
+                        </div>
+                        <p>${baseProductos.responseJSON[i].nombre}</p>
+                        <p class="carritoMini_contenido_precio">$${baseProductos.responseJSON[i].precio}</p>
+                        </div>`
+                    )
+                }
+
+                if(localStorage.getItem(`infoProducto${baseProductos.responseJSON[i].id}`) == null){
+                    let valoresDefault = 1
+                    localStorage.setItem(`infoProducto${baseProductos.responseJSON[i].id}`,valoresDefault)
+                }
+                else{
+                    let valoresDefault = localStorage.getItem(`infoProducto${baseProductos.responseJSON[i].id}`)
+                    valoresDefault++
+                    localStorage.setItem(`infoProducto${baseProductos.responseJSON[i].id}`,valoresDefault)
+                }
+                
                 break         
             }
         }

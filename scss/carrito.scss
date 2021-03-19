@@ -80,11 +80,11 @@
         font-family: 'goodtime';
         font-weight: 1000;
     }
-    input:focus{
-        outline: none;
-    }
-    button:focus{
-        outline: none;
+    .no-product{
+        
+            width:1300px ;
+    
+        
     }
 }
 
@@ -94,3 +94,59 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
+.pay-info{
+    width: 1300px;
+    margin-bottom:30px ;
+    background-color: transparent;
+    display: flex;
+
+    .pay-info_continuar{
+        background-color: transparent;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0;
+        button{
+            
+            font-family: 'goodtime';
+            background-color: $secondary-color;
+            border: none;
+            color: $primary-color;
+            padding: 10px;
+            border-radius: 5px;
+            
+        }
+        .vaciar-carrito{
+            margin-bottom: 20px;
+        }
+    }
+    .pay-info_total{
+        padding-top: 10px;
+        width: 70%;
+        background-color: $secondary-color;
+        color: $primary-color;
+        font-family: 'goodtime';
+        display: flex;
+        justify-content: flex-end;
+        .pay-info_total_contenedor{
+            height: 100%;
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        p{
+            margin-bottom: 10px;
+            
+            font-size: 0.8rem;
+        }
+        .total-monto{
+            margin: 0;
+            font-size: 2rem;
+            font-weight: 600;
+            justify-self: flex-end;
+        }
+    }
+    }
+}

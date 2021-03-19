@@ -8,3 +8,6 @@ let carritoIcon= $(".cartBx");
 const contenedorCarrito = $(".carritoMini_contenido");
 let vaciarCarrito = $(".vaciar-carrito")
 const contenedorCarritoMain = $(".product-display")
+
+let totalMonto = $(".total_monto")
+let totalMontoArray = []
