@@ -1,5 +1,5 @@
 //Establece el id del producto seleccionado al presionar LA TARJETA en el localstorage, y redigira a la pagina que se encargara de comparar ese id en el json para llenar el template con la informacion del producto clickeado
-//Evitar que la funcion llegue al boton de compra para usarlo luego
+
 tarjeta.click(
     function(){
         let dataId = $(this).data("id");
@@ -8,20 +8,16 @@ tarjeta.click(
     }
 );
 
-//Al clickear en el boton comprar ahora luego de comprobar el local storage (funcion comprobar) se obtiene el id de la tarjeta en la que se ejecuta el evento, se lo incluye en el array de productos y se sobreescribe
-//el localstorage con el nuevo id en el array para usarlo en el futuro. Ademas, la funcion compara el id del producto con los id de los productos en el json hasta encontrar el que coincida, una ves encontrado se
-//crea el item en el carrito con los datos proporcionados por el json
+//Al clickear en el boton comprar ahora luego de comprobar el localstorage (funcion comprobar)(se verifica si existre o no el array donde se almacenaran los productos a comprar) se obtiene el id de la tarjeta en la 
+//que se ejecuta el evento.
+//El for accede a los objetos del json hasta dar con el que posea el mismo id que el producto seleccionado, luego procede a comprobar si el id ya estaba previamente agregado, en caso de que no, se pushea el id al array
+//y se almacena el nuevo array en localstorage, ademas se crea la estructura del html con la info sacada del json
 botonCompra.click(
     function(e){
-        e.preventDefault()
+        e.preventDefault();
         e.stopPropagation();
         comprobar();
-        
         let infoId = this.parentElement.parentElement.dataset.id
-        
-        
-        
-        
         for(var i = 0; infoId < baseProductos.responseJSON.length;i++){
             if(baseProductos.responseJSON[i].id == infoId){
                 if(productosArray.includes(infoId) == false){
@@ -38,6 +34,8 @@ botonCompra.click(
                     )
                 }
 
+                //Esta parte se encarga de crear una key que indica cuanta cantidad el mismo producto se pedira (else), osea sus cantidades individuales, en caso de que no se alla seleccionado el producto previamente(if) se creara la key con un valor
+                //default de 1
                 if(localStorage.getItem(`infoProducto${baseProductos.responseJSON[i].id}`) == null){
                     let valoresDefault = 1
                     localStorage.setItem(`infoProducto${baseProductos.responseJSON[i].id}`,valoresDefault)
@@ -51,6 +49,7 @@ botonCompra.click(
                 break         
             }
         }
+        //al clickear el boton de compra se mostrara un cartel en la esquina inferior izquierda que confirmara que el producto se agrego al carrito
         alertaCarrito.css("visibility","visible")
         setTimeout(()=>{
             alertaCarrito.css("visibility","hidden")
@@ -62,13 +61,10 @@ botonCompra.click(
 //En caso de que ya exista informacion (porque se esta recargando la pagina o se esta volviendo a visitar y no se borro el carrito) la funcion recuperara la informacion ya almacenada
 function comprobar(){
     if(localStorage.getItem('productosAlmacenados') == null){
-        console.log("no hay array")
         productosArray = [];
-        
-        
     }
     else{
-        console.log("si hay array")
+        
         productosArray = JSON.parse(localStorage.getItem('productosAlmacenados'))
     }
 } 

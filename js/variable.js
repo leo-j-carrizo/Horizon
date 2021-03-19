@@ -6,8 +6,9 @@ let carritoMini = $("#carritoMini");
 let alertaCarrito = $(".alerta_carrito");
 let carritoIcon= $(".cartBx");
 const contenedorCarrito = $(".carritoMini_contenido");
-let vaciarCarrito = $(".vaciar-carrito")
-const contenedorCarritoMain = $(".product-display")
-
-let totalMonto = $(".total_monto")
-let totalMontoArray = []
+let vaciarCarrito = $(".vaciar-carrito");
+const contenedorCarritoMain = $(".product-display");
+let totalMonto = $(".total-monto");
+let divAlerta = $(".correcto");
+let divAlertaIncorrecto = $(".incorrecto");
+let infoSesionCaja = $(".logBx");

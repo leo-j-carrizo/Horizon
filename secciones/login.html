@@ -18,7 +18,7 @@
                 <h2>Iniciar Sesion</h2>
                 <form action="">
                     <div class="login_contentBx_formBx_inputBx">
-                        <label for="user">Usuario</label>
+                        <label for="user">Usuario/Email</label>
                         <input type="text" id="user">
                     </div>
                     <div class="login_contentBx_formBx_inputBx">
@@ -28,7 +28,7 @@
                     <div class="login_contentBx_formBx_remember">
                         <label for="user"><input type="checkbox" id="check"> Mantener sesion iniciada</label>
                     </div>
-                    <div class="login_contentBx_formBx_inputBx">
+                    <div class="login_contentBx_formBx_inputBx confirmButton">
                         <input type="submit" value="Iniciar Sesion" >
                     </div>
                     <div class="login_contentBx_formBx_inputBx">
@@ -46,6 +46,16 @@
             </div>
         </div>
     </section>
+    <div class="alerta_usuario correcto">
+        <p>Sesion iniciada con exito!!!</p>
+    </div>
+    <div class="alerta_usuario incorrecto">
+        <p>Usuario y/o contraseña incorrectos!!!</p>
+    </div>
+    <!-- Scripts propios -->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/variable.js"></script>
     <script src="../js/login.js"></script>
 </body>
 </html>
