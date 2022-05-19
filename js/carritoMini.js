@@ -1,5 +1,5 @@
 //Json con informacion de los productos
-let baseProductos = $.get("https://github.com/leo-j-carrizo/Horizon.git",function(){
+let baseProductos = $.get("https://leo-j-carrizo.github.io/Horizon/json/productos.json",function(){
     //Si no se a agregado un producto a la key que almacena los ids no se hace nada
     if(localStorage.getItem('productosAlmacenados') == null){}
     //En caso de que se halla presionado comprar en algun producto y se halla almacenado su id se ejecutara la funcion

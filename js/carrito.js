@@ -1,4 +1,4 @@
-let baseProductos = $.get("https://github.com/leo-j-carrizo/Horizon.git",function(){
+let baseProductos = $.get("https://leo-j-carrizo.github.io/Horizon/json/productos.json",function(){
     if(localStorage.getItem('productosAlmacenados') == null){}
     else{
     //recorre el array devolviendo como parametro en cada vuelta los elementos del mismo

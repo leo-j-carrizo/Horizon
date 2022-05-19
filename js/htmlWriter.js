@@ -1,6 +1,6 @@
 let htmlDinamico = $("#dinamico");
 //De la misma manera que el carrito, la funcion recupera el id del localstorage y recorre el json hasta encontrar el objeto que posea un id coincidente y crea el template con los datos del mismo
-let baseProductosDetalles = $.get("https://github.com/leo-j-carrizo/Horizon.git", function(){
+let baseProductosDetalles = $.get("https://leo-j-carrizo.github.io/Horizon/json/productos.json", function(){
     let dataId = localStorage.getItem('id-producto');
     for(var i = 0; dataId < baseProductosDetalles.responseJSON.length;i++){
         if(baseProductosDetalles.responseJSON[i].id == dataId){
